@@ -6,9 +6,9 @@ services:
     ipc: host
     volumes:
       - /home/carbi/ros:/home/ros
-      - /home/carbi/cubie-1:/ros2
-    # devices:
-    #   - /dev/ttyUSB0:/dev/ttyUSB0
+      - /home/carbi/carbi-1:/ros2
+    devices:
+      - /dev/ttyUSB0:/dev/ttyUSB0
     tty: true
     environment:
       - DISPLAY
