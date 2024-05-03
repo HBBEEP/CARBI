@@ -1,0 +1,6 @@
+Invoking command in '/ros2/carbi/build/carbi_sensor_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /ros2/carbi/src/carbi_sensor_interface -DCMAKE_INSTALL_PREFIX=/ros2/carbi/install/carbi_sensor_interface
+Invoked command in '/ros2/carbi/build/carbi_sensor_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /ros2/carbi/src/carbi_sensor_interface -DCMAKE_INSTALL_PREFIX=/ros2/carbi/install/carbi_sensor_interface
+Invoking command in '/ros2/carbi/build/carbi_sensor_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ros2/carbi/build/carbi_sensor_interface -- -j4 -l4
+Invoked command in '/ros2/carbi/build/carbi_sensor_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ros2/carbi/build/carbi_sensor_interface -- -j4 -l4
+Invoking command in '/ros2/carbi/build/carbi_sensor_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ros2/carbi/build/carbi_sensor_interface
+Invoked command in '/ros2/carbi/build/carbi_sensor_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ros2/carbi/build/carbi_sensor_interface

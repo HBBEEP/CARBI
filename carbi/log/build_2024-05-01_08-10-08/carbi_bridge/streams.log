@@ -1,0 +1,27 @@
+[0.039s] Invoking command in '/ros2/carbi/build/carbi_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ros2/carbi/build/carbi_bridge -- -j4 -l4
+[0.146s] Invoked command in '/ros2/carbi/build/carbi_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ros2/carbi/build/carbi_bridge -- -j4 -l4
+[0.319s] Invoking command in '/ros2/carbi/build/carbi_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ros2/carbi/build/carbi_bridge
+[0.393s] -- Install configuration: ""
+[0.393s] -- Up-to-date: /ros2/carbi/install/carbi_bridge/lib/carbi_bridge/bridge.py
+[0.396s] -- Up-to-date: /ros2/carbi/install/carbi_bridge/lib/carbi_bridge/kinematics.py
+[0.397s] -- Up-to-date: /ros2/carbi/install/carbi_bridge/share/carbi_bridge/scripts
+[0.397s] -- Up-to-date: /ros2/carbi/install/carbi_bridge/share/carbi_bridge/scripts/kinematics.py
+[0.397s] -- Up-to-date: /ros2/carbi/install/carbi_bridge/share/carbi_bridge/scripts/bridge.py
+[0.397s] -- Up-to-date: /ros2/carbi/install/carbi_bridge/share/carbi_bridge/launch
+[0.397s] -- Up-to-date: /ros2/carbi/install/carbi_bridge/share/carbi_bridge/launch/carbi.launch.py
+[0.397s] -- Up-to-date: /ros2/carbi/install/carbi_bridge/share/ament_index/resource_index/package_run_dependencies/carbi_bridge
+[0.398s] -- Up-to-date: /ros2/carbi/install/carbi_bridge/share/ament_index/resource_index/parent_prefix_path/carbi_bridge
+[0.398s] -- Up-to-date: /ros2/carbi/install/carbi_bridge/share/carbi_bridge/environment/ament_prefix_path.sh
+[0.400s] -- Up-to-date: /ros2/carbi/install/carbi_bridge/share/carbi_bridge/environment/ament_prefix_path.dsv
+[0.400s] -- Up-to-date: /ros2/carbi/install/carbi_bridge/share/carbi_bridge/environment/path.sh
+[0.408s] -- Up-to-date: /ros2/carbi/install/carbi_bridge/share/carbi_bridge/environment/path.dsv
+[0.409s] -- Up-to-date: /ros2/carbi/install/carbi_bridge/share/carbi_bridge/local_setup.bash
+[0.409s] -- Up-to-date: /ros2/carbi/install/carbi_bridge/share/carbi_bridge/local_setup.sh
+[0.409s] -- Up-to-date: /ros2/carbi/install/carbi_bridge/share/carbi_bridge/local_setup.zsh
+[0.409s] -- Up-to-date: /ros2/carbi/install/carbi_bridge/share/carbi_bridge/local_setup.dsv
+[0.409s] -- Up-to-date: /ros2/carbi/install/carbi_bridge/share/carbi_bridge/package.dsv
+[0.409s] -- Up-to-date: /ros2/carbi/install/carbi_bridge/share/ament_index/resource_index/packages/carbi_bridge
+[0.409s] -- Up-to-date: /ros2/carbi/install/carbi_bridge/share/carbi_bridge/cmake/carbi_bridgeConfig.cmake
+[0.409s] -- Up-to-date: /ros2/carbi/install/carbi_bridge/share/carbi_bridge/cmake/carbi_bridgeConfig-version.cmake
+[0.410s] -- Up-to-date: /ros2/carbi/install/carbi_bridge/share/carbi_bridge/package.xml
+[0.457s] Invoked command in '/ros2/carbi/build/carbi_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ros2/carbi/build/carbi_bridge

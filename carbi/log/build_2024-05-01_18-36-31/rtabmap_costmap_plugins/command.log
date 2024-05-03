@@ -1,0 +1,2 @@
+Invoking command in '/ros2/carbi/build/rtabmap_costmap_plugins': /usr/bin/cmake /ros2/carbi/src/rtabmap_ros/rtabmap_costmap_plugins -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/ros2/carbi/install/rtabmap_costmap_plugins
+Invoked command in '/ros2/carbi/build/rtabmap_costmap_plugins' returned '1': /usr/bin/cmake /ros2/carbi/src/rtabmap_ros/rtabmap_costmap_plugins -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/ros2/carbi/install/rtabmap_costmap_plugins

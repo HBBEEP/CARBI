@@ -1,0 +1,33 @@
+[0.041s] Invoking command in '/ros2/carbi/build/rtabmap_costmap_plugins': /usr/bin/cmake /ros2/carbi/src/rtabmap_ros/rtabmap_costmap_plugins -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/ros2/carbi/install/rtabmap_costmap_plugins
+[0.710s] -- The C compiler identification is GNU 11.4.0
+[1.263s] -- The CXX compiler identification is GNU 11.4.0
+[1.315s] -- Detecting C compiler ABI info
+[1.568s] -- Detecting C compiler ABI info - done
+[1.579s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.579s] -- Detecting C compile features
+[1.580s] -- Detecting C compile features - done
+[1.585s] -- Detecting CXX compiler ABI info
+[1.884s] -- Detecting CXX compiler ABI info - done
+[1.897s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.900s] -- Detecting CXX compile features
+[1.901s] -- Detecting CXX compile features - done
+[1.967s] [31mCMake Error at CMakeLists.txt:8 (find_package):
+[1.972s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[1.973s]   asked CMake to find a package configuration file provided by "catkin", but
+[1.975s]   CMake did not find one.
+[1.977s] 
+[1.978s]   Could not find a package configuration file provided by "catkin" with any
+[1.979s]   of the following names:
+[1.980s] 
+[1.981s]     catkinConfig.cmake
+[1.982s]     catkin-config.cmake
+[1.984s] 
+[1.985s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[1.986s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[1.987s]   provides a separate development package or SDK, be sure it has been
+[1.989s]   installed.
+[1.990s] 
+[1.991s] [0m
+[2.011s] -- Configuring incomplete, errors occurred!
+[2.011s] See also "/ros2/carbi/build/rtabmap_costmap_plugins/CMakeFiles/CMakeOutput.log".
+[2.014s] Invoked command in '/ros2/carbi/build/rtabmap_costmap_plugins' returned '1': /usr/bin/cmake /ros2/carbi/src/rtabmap_ros/rtabmap_costmap_plugins -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/ros2/carbi/install/rtabmap_costmap_plugins

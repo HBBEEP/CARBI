@@ -1,0 +1,36 @@
+[0.065s] Invoking command in '/ros2/carbi/build/carbi_sensor_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ros2/carbi/build/carbi_sensor_interface -- -j4 -l4
+[0.489s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.903s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.073s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.074s] -- Added test 'lint_cmake' to check CMake code style
+[1.075s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.077s] -- Added test 'xmllint' to check XML markup files
+[1.082s] -- Configuring done
+[1.106s] -- Generating done
+[1.112s] -- Build files have been written to: /ros2/carbi/build/carbi_sensor_interface
+[1.164s] Invoked command in '/ros2/carbi/build/carbi_sensor_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ros2/carbi/build/carbi_sensor_interface -- -j4 -l4
+[1.210s] Invoking command in '/ros2/carbi/build/carbi_sensor_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ros2/carbi/build/carbi_sensor_interface
+[1.227s] -- Install configuration: ""
+[1.228s] -- Installing: /ros2/carbi/install/carbi_sensor_interface/lib/carbi_sensor_interface/camera_interface.py
+[1.228s] -- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/lib/carbi_sensor_interface/imu_interface.py
+[1.228s] -- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/lib/carbi_sensor_interface/mpu9250_i2c.py
+[1.228s] -- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/scripts
+[1.228s] -- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/scripts/imu_interface.py
+[1.228s] -- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/scripts/mpu9250_i2c.py
+[1.228s] -- Installing: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/scripts/camera_interface.py
+[1.229s] -- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/ament_index/resource_index/package_run_dependencies/carbi_sensor_interface
+[1.229s] -- Installing: /ros2/carbi/install/carbi_sensor_interface/share/ament_index/resource_index/parent_prefix_path/carbi_sensor_interface
+[1.230s] -- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/environment/ament_prefix_path.sh
+[1.230s] -- Installing: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/environment/ament_prefix_path.dsv
+[1.230s] -- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/environment/path.sh
+[1.230s] -- Installing: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/environment/path.dsv
+[1.230s] -- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/local_setup.bash
+[1.231s] -- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/local_setup.sh
+[1.231s] -- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/local_setup.zsh
+[1.231s] -- Installing: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/local_setup.dsv
+[1.231s] -- Installing: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/package.dsv
+[1.231s] -- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/ament_index/resource_index/packages/carbi_sensor_interface
+[1.231s] -- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/cmake/carbi_sensor_interfaceConfig.cmake
+[1.231s] -- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/cmake/carbi_sensor_interfaceConfig-version.cmake
+[1.232s] -- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/package.xml
+[1.247s] Invoked command in '/ros2/carbi/build/carbi_sensor_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ros2/carbi/build/carbi_sensor_interface

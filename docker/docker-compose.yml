@@ -8,7 +8,14 @@ services:
       - /home/carbi/ros:/home/ros
       - /home/carbi/carbi-1:/ros2
     devices:
-      - /dev/ttyUSB0:/dev/ttyUSB0
+      # - /dev/ttyUSB0:/dev/ttyUSB0
+      - /dev/i2c-1:/dev/i2c-1
+      - /dev/video0:/dev/video0
+    privileged: true
+    restart: always
+    device_cgroup_rules:
+      - 'c 81:* rmw'
+      - 'c 189:* rmw'
     tty: true
     environment:
       - DISPLAY

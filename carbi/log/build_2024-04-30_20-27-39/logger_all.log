@@ -1,0 +1,400 @@
+[0.207s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.208s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff87f7ff40>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff87f7fa00>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff87f7fa00>>, mixin_verb=('build',))
+[0.466s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.467s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/Gazebo.meta'
+[0.469s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastrtps.meta'
+[0.469s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.469s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.469s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.469s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.469s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.469s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/ros2/carbi'
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/carbi_bridge) by extensions ['ignore', 'ignore_ament_install']
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/carbi_bridge) by extension 'ignore'
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/carbi_bridge) by extension 'ignore_ament_install'
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/carbi_bridge) by extensions ['colcon_pkg']
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/carbi_bridge) by extension 'colcon_pkg'
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/carbi_bridge) by extensions ['colcon_meta']
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/carbi_bridge) by extension 'colcon_meta'
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/carbi_bridge) by extensions ['ros']
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/carbi_bridge) by extension 'ros'
+[0.513s] DEBUG:colcon.colcon_core.package_identification:Package 'src/carbi_bridge' with type 'ros.ament_cmake' and name 'carbi_bridge'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/carbi_kinematics) by extensions ['ignore', 'ignore_ament_install']
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/carbi_kinematics) by extension 'ignore'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/carbi_kinematics) by extension 'ignore_ament_install'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/carbi_kinematics) by extensions ['colcon_pkg']
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/carbi_kinematics) by extension 'colcon_pkg'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/carbi_kinematics) by extensions ['colcon_meta']
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/carbi_kinematics) by extension 'colcon_meta'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/carbi_kinematics) by extensions ['ros']
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/carbi_kinematics) by extension 'ros'
+[0.515s] DEBUG:colcon.colcon_core.package_identification:Package 'src/carbi_kinematics' with type 'ros.ament_cmake' and name 'carbi_kinematics'
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(src/carbi_robot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/carbi_robot_description) by extension 'ignore'
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/carbi_robot_description) by extension 'ignore_ament_install'
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/carbi_robot_description) by extensions ['colcon_pkg']
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/carbi_robot_description) by extension 'colcon_pkg'
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/carbi_robot_description) by extensions ['colcon_meta']
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/carbi_robot_description) by extension 'colcon_meta'
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/carbi_robot_description) by extensions ['ros']
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/carbi_robot_description) by extension 'ros'
+[0.517s] DEBUG:colcon.colcon_core.package_identification:Package 'src/carbi_robot_description' with type 'ros.ament_cmake' and name 'carbi_robot_description'
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/carbi_sensor_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/carbi_sensor_interface) by extension 'ignore'
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/carbi_sensor_interface) by extension 'ignore_ament_install'
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/carbi_sensor_interface) by extensions ['colcon_pkg']
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/carbi_sensor_interface) by extension 'colcon_pkg'
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/carbi_sensor_interface) by extensions ['colcon_meta']
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/carbi_sensor_interface) by extension 'colcon_meta'
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/carbi_sensor_interface) by extensions ['ros']
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/carbi_sensor_interface) by extension 'ros'
+[0.519s] DEBUG:colcon.colcon_core.package_identification:Package 'src/carbi_sensor_interface' with type 'ros.ament_cmake' and name 'carbi_sensor_interface'
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extension 'ignore'
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extension 'ignore_ament_install'
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extensions ['colcon_pkg']
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extension 'colcon_pkg'
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extensions ['colcon_meta']
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extension 'colcon_meta'
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extensions ['ros']
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extension 'ros'
+[0.521s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rplidar_ros2' with type 'ros.ament_cmake' and name 'rplidar_ros'
+[0.521s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.521s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.521s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.521s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.521s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.559s] Level 5:colcon.colcon_core.verb:set package 'carbi_bridge' build argument 'cmake_args' from command line to 'None'
+[0.559s] Level 5:colcon.colcon_core.verb:set package 'carbi_bridge' build argument 'cmake_target' from command line to 'None'
+[0.559s] Level 5:colcon.colcon_core.verb:set package 'carbi_bridge' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.559s] Level 5:colcon.colcon_core.verb:set package 'carbi_bridge' build argument 'cmake_clean_cache' from command line to 'False'
+[0.559s] Level 5:colcon.colcon_core.verb:set package 'carbi_bridge' build argument 'cmake_clean_first' from command line to 'False'
+[0.559s] Level 5:colcon.colcon_core.verb:set package 'carbi_bridge' build argument 'cmake_force_configure' from command line to 'False'
+[0.559s] Level 5:colcon.colcon_core.verb:set package 'carbi_bridge' build argument 'ament_cmake_args' from command line to 'None'
+[0.559s] Level 5:colcon.colcon_core.verb:set package 'carbi_bridge' build argument 'catkin_cmake_args' from command line to 'None'
+[0.559s] Level 5:colcon.colcon_core.verb:set package 'carbi_bridge' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.559s] DEBUG:colcon.colcon_core.verb:Building package 'carbi_bridge' with the following arguments: {'ament_cmake_args': None, 'build_base': '/ros2/carbi/build/carbi_bridge', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/ros2/carbi/install/carbi_bridge', 'merge_install': False, 'path': '/ros2/carbi/src/carbi_bridge', 'symlink_install': False, 'test_result_base': None}
+[0.560s] Level 5:colcon.colcon_core.verb:set package 'carbi_kinematics' build argument 'cmake_args' from command line to 'None'
+[0.560s] Level 5:colcon.colcon_core.verb:set package 'carbi_kinematics' build argument 'cmake_target' from command line to 'None'
+[0.560s] Level 5:colcon.colcon_core.verb:set package 'carbi_kinematics' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.560s] Level 5:colcon.colcon_core.verb:set package 'carbi_kinematics' build argument 'cmake_clean_cache' from command line to 'False'
+[0.560s] Level 5:colcon.colcon_core.verb:set package 'carbi_kinematics' build argument 'cmake_clean_first' from command line to 'False'
+[0.560s] Level 5:colcon.colcon_core.verb:set package 'carbi_kinematics' build argument 'cmake_force_configure' from command line to 'False'
+[0.560s] Level 5:colcon.colcon_core.verb:set package 'carbi_kinematics' build argument 'ament_cmake_args' from command line to 'None'
+[0.560s] Level 5:colcon.colcon_core.verb:set package 'carbi_kinematics' build argument 'catkin_cmake_args' from command line to 'None'
+[0.560s] Level 5:colcon.colcon_core.verb:set package 'carbi_kinematics' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.560s] DEBUG:colcon.colcon_core.verb:Building package 'carbi_kinematics' with the following arguments: {'ament_cmake_args': None, 'build_base': '/ros2/carbi/build/carbi_kinematics', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/ros2/carbi/install/carbi_kinematics', 'merge_install': False, 'path': '/ros2/carbi/src/carbi_kinematics', 'symlink_install': False, 'test_result_base': None}
+[0.560s] Level 5:colcon.colcon_core.verb:set package 'carbi_robot_description' build argument 'cmake_args' from command line to 'None'
+[0.560s] Level 5:colcon.colcon_core.verb:set package 'carbi_robot_description' build argument 'cmake_target' from command line to 'None'
+[0.560s] Level 5:colcon.colcon_core.verb:set package 'carbi_robot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.560s] Level 5:colcon.colcon_core.verb:set package 'carbi_robot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.560s] Level 5:colcon.colcon_core.verb:set package 'carbi_robot_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.560s] Level 5:colcon.colcon_core.verb:set package 'carbi_robot_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.560s] Level 5:colcon.colcon_core.verb:set package 'carbi_robot_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'carbi_robot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'carbi_robot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.561s] DEBUG:colcon.colcon_core.verb:Building package 'carbi_robot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/ros2/carbi/build/carbi_robot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/ros2/carbi/install/carbi_robot_description', 'merge_install': False, 'path': '/ros2/carbi/src/carbi_robot_description', 'symlink_install': False, 'test_result_base': None}
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'carbi_sensor_interface' build argument 'cmake_args' from command line to 'None'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'carbi_sensor_interface' build argument 'cmake_target' from command line to 'None'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'carbi_sensor_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'carbi_sensor_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'carbi_sensor_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'carbi_sensor_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'carbi_sensor_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'carbi_sensor_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'carbi_sensor_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.561s] DEBUG:colcon.colcon_core.verb:Building package 'carbi_sensor_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/ros2/carbi/build/carbi_sensor_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/ros2/carbi/install/carbi_sensor_interface', 'merge_install': False, 'path': '/ros2/carbi/src/carbi_sensor_interface', 'symlink_install': False, 'test_result_base': None}
+[0.562s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_args' from command line to 'None'
+[0.562s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_target' from command line to 'None'
+[0.562s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.562s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[0.562s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_clean_first' from command line to 'False'
+[0.562s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_force_configure' from command line to 'False'
+[0.562s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'ament_cmake_args' from command line to 'None'
+[0.562s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[0.562s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.562s] DEBUG:colcon.colcon_core.verb:Building package 'rplidar_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/ros2/carbi/build/rplidar_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/ros2/carbi/install/rplidar_ros', 'merge_install': False, 'path': '/ros2/carbi/src/rplidar_ros2', 'symlink_install': False, 'test_result_base': None}
+[0.562s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.564s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.564s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/ros2/carbi/src/carbi_bridge' with build type 'ament_cmake'
+[0.564s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/ros2/carbi/src/carbi_bridge'
+[0.568s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.568s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.568s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.577s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/ros2/carbi/src/carbi_kinematics' with build type 'ament_cmake'
+[0.578s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/ros2/carbi/src/carbi_kinematics'
+[0.579s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.579s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.586s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/ros2/carbi/src/carbi_robot_description' with build type 'ament_cmake'
+[0.587s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/ros2/carbi/src/carbi_robot_description'
+[0.588s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.588s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.596s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/ros2/carbi/src/carbi_sensor_interface' with build type 'ament_cmake'
+[0.596s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/ros2/carbi/src/carbi_sensor_interface'
+[0.597s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.597s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.610s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ros2/carbi/build/carbi_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /ros2/carbi/build/carbi_bridge -- -j4 -l4
+[0.617s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ros2/carbi/build/carbi_kinematics': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /ros2/carbi/build/carbi_kinematics -- -j4 -l4
+[0.622s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ros2/carbi/build/carbi_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /ros2/carbi/build/carbi_robot_description -- -j4 -l4
+[0.638s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ros2/carbi/build/carbi_sensor_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /ros2/carbi/build/carbi_sensor_interface -- -j4 -l4
+[0.738s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ros2/carbi/build/carbi_bridge' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /ros2/carbi/build/carbi_bridge -- -j4 -l4
+[0.742s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ros2/carbi/build/carbi_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /ros2/carbi/build/carbi_robot_description -- -j4 -l4
+[0.747s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ros2/carbi/build/carbi_sensor_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /ros2/carbi/build/carbi_sensor_interface -- -j4 -l4
+[0.750s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ros2/carbi/build/carbi_kinematics' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /ros2/carbi/build/carbi_kinematics -- -j4 -l4
+[0.827s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ros2/carbi/build/carbi_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /ros2/carbi/build/carbi_bridge
+[0.831s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ros2/carbi/build/carbi_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /ros2/carbi/build/carbi_robot_description
+[0.838s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ros2/carbi/build/carbi_sensor_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /ros2/carbi/build/carbi_sensor_interface
+[0.857s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ros2/carbi/build/carbi_kinematics': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /ros2/carbi/build/carbi_kinematics
+[0.865s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(carbi_bridge)
+[0.870s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_bridge' for CMake module files
+[0.872s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ros2/carbi/build/carbi_bridge' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /ros2/carbi/build/carbi_bridge
+[0.873s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_bridge' for CMake config files
+[0.874s] Level 1:colcon.colcon_core.shell:create_environment_hook('carbi_bridge', 'cmake_prefix_path')
+[0.875s] INFO:colcon.colcon_core.shell:Creating environment hook '/ros2/carbi/install/carbi_bridge/share/carbi_bridge/hook/cmake_prefix_path.ps1'
+[0.880s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ros2/carbi/install/carbi_bridge/share/carbi_bridge/hook/cmake_prefix_path.dsv'
+[0.885s] INFO:colcon.colcon_core.shell:Creating environment hook '/ros2/carbi/install/carbi_bridge/share/carbi_bridge/hook/cmake_prefix_path.sh'
+[0.890s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_bridge/bin'
+[0.891s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_bridge/lib/pkgconfig/carbi_bridge.pc'
+[0.897s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_bridge/lib/python3.10/site-packages'
+[0.897s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_bridge/bin'
+[0.898s] INFO:colcon.colcon_core.shell:Creating package script '/ros2/carbi/install/carbi_bridge/share/carbi_bridge/package.ps1'
+[0.901s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ros2/carbi/install/carbi_bridge/share/carbi_bridge/package.dsv'
+[0.906s] INFO:colcon.colcon_core.shell:Creating package script '/ros2/carbi/install/carbi_bridge/share/carbi_bridge/package.sh'
+[0.909s] INFO:colcon.colcon_core.shell:Creating package script '/ros2/carbi/install/carbi_bridge/share/carbi_bridge/package.bash'
+[0.911s] INFO:colcon.colcon_core.shell:Creating package script '/ros2/carbi/install/carbi_bridge/share/carbi_bridge/package.zsh'
+[0.913s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ros2/carbi/install/carbi_bridge/share/colcon-core/packages/carbi_bridge)
+[0.917s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(carbi_robot_description)
+[0.918s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_robot_description' for CMake module files
+[0.919s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ros2/carbi/build/carbi_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /ros2/carbi/build/carbi_robot_description
+[0.920s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_robot_description' for CMake config files
+[0.921s] Level 1:colcon.colcon_core.shell:create_environment_hook('carbi_robot_description', 'cmake_prefix_path')
+[0.922s] INFO:colcon.colcon_core.shell:Creating environment hook '/ros2/carbi/install/carbi_robot_description/share/carbi_robot_description/hook/cmake_prefix_path.ps1'
+[0.924s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ros2/carbi/install/carbi_robot_description/share/carbi_robot_description/hook/cmake_prefix_path.dsv'
+[0.925s] INFO:colcon.colcon_core.shell:Creating environment hook '/ros2/carbi/install/carbi_robot_description/share/carbi_robot_description/hook/cmake_prefix_path.sh'
+[0.927s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_robot_description/bin'
+[0.927s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_robot_description/lib/pkgconfig/carbi_robot_description.pc'
+[0.928s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_robot_description/lib/python3.10/site-packages'
+[0.928s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_robot_description/bin'
+[0.929s] INFO:colcon.colcon_core.shell:Creating package script '/ros2/carbi/install/carbi_robot_description/share/carbi_robot_description/package.ps1'
+[0.930s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ros2/carbi/install/carbi_robot_description/share/carbi_robot_description/package.dsv'
+[0.932s] INFO:colcon.colcon_core.shell:Creating package script '/ros2/carbi/install/carbi_robot_description/share/carbi_robot_description/package.sh'
+[0.933s] INFO:colcon.colcon_core.shell:Creating package script '/ros2/carbi/install/carbi_robot_description/share/carbi_robot_description/package.bash'
+[0.934s] INFO:colcon.colcon_core.shell:Creating package script '/ros2/carbi/install/carbi_robot_description/share/carbi_robot_description/package.zsh'
+[0.935s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ros2/carbi/install/carbi_robot_description/share/colcon-core/packages/carbi_robot_description)
+[0.940s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(carbi_kinematics)
+[0.941s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_kinematics' for CMake module files
+[0.942s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ros2/carbi/build/carbi_kinematics' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /ros2/carbi/build/carbi_kinematics
+[0.943s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_kinematics' for CMake config files
+[0.943s] Level 1:colcon.colcon_core.shell:create_environment_hook('carbi_kinematics', 'cmake_prefix_path')
+[0.944s] INFO:colcon.colcon_core.shell:Creating environment hook '/ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/hook/cmake_prefix_path.ps1'
+[0.946s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/hook/cmake_prefix_path.dsv'
+[0.947s] INFO:colcon.colcon_core.shell:Creating environment hook '/ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/hook/cmake_prefix_path.sh'
+[0.949s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_kinematics/lib'
+[0.949s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_kinematics/bin'
+[0.950s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_kinematics/lib/pkgconfig/carbi_kinematics.pc'
+[0.950s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_kinematics/lib/python3.10/site-packages'
+[0.951s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_kinematics/bin'
+[0.952s] INFO:colcon.colcon_core.shell:Creating package script '/ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/package.ps1'
+[0.953s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/package.dsv'
+[0.955s] INFO:colcon.colcon_core.shell:Creating package script '/ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/package.sh'
+[0.956s] INFO:colcon.colcon_core.shell:Creating package script '/ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/package.bash'
+[0.957s] INFO:colcon.colcon_core.shell:Creating package script '/ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/package.zsh'
+[0.959s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ros2/carbi/install/carbi_kinematics/share/colcon-core/packages/carbi_kinematics)
+[0.961s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(carbi_sensor_interface)
+[0.962s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_sensor_interface' for CMake module files
+[0.963s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_sensor_interface' for CMake config files
+[0.964s] Level 1:colcon.colcon_core.shell:create_environment_hook('carbi_sensor_interface', 'cmake_prefix_path')
+[0.965s] INFO:colcon.colcon_core.shell:Creating environment hook '/ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/hook/cmake_prefix_path.ps1'
+[0.966s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ros2/carbi/build/carbi_sensor_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /ros2/carbi/build/carbi_sensor_interface
+[0.967s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/hook/cmake_prefix_path.dsv'
+[0.968s] INFO:colcon.colcon_core.shell:Creating environment hook '/ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/hook/cmake_prefix_path.sh'
+[0.969s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_sensor_interface/lib'
+[0.969s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_sensor_interface/bin'
+[0.970s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_sensor_interface/lib/pkgconfig/carbi_sensor_interface.pc'
+[0.970s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_sensor_interface/lib/python3.10/site-packages'
+[0.971s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_sensor_interface/bin'
+[0.972s] INFO:colcon.colcon_core.shell:Creating package script '/ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/package.ps1'
+[0.975s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/package.dsv'
+[0.976s] INFO:colcon.colcon_core.shell:Creating package script '/ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/package.sh'
+[0.977s] INFO:colcon.colcon_core.shell:Creating package script '/ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/package.bash'
+[0.978s] INFO:colcon.colcon_core.shell:Creating package script '/ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/package.zsh'
+[0.980s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ros2/carbi/install/carbi_sensor_interface/share/colcon-core/packages/carbi_sensor_interface)
+[0.996s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(carbi_bridge)
+[0.997s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_bridge' for CMake module files
+[0.998s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_bridge' for CMake config files
+[0.998s] Level 1:colcon.colcon_core.shell:create_environment_hook('carbi_bridge', 'cmake_prefix_path')
+[0.999s] INFO:colcon.colcon_core.shell:Creating environment hook '/ros2/carbi/install/carbi_bridge/share/carbi_bridge/hook/cmake_prefix_path.ps1'
+[1.005s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ros2/carbi/install/carbi_bridge/share/carbi_bridge/hook/cmake_prefix_path.dsv'
+[1.007s] INFO:colcon.colcon_core.shell:Creating environment hook '/ros2/carbi/install/carbi_bridge/share/carbi_bridge/hook/cmake_prefix_path.sh'
+[1.013s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_bridge/bin'
+[1.013s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_bridge/lib/pkgconfig/carbi_bridge.pc'
+[1.014s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_bridge/lib/python3.10/site-packages'
+[1.014s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_bridge/bin'
+[1.015s] INFO:colcon.colcon_core.shell:Creating package script '/ros2/carbi/install/carbi_bridge/share/carbi_bridge/package.ps1'
+[1.017s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ros2/carbi/install/carbi_bridge/share/carbi_bridge/package.dsv'
+[1.019s] INFO:colcon.colcon_core.shell:Creating package script '/ros2/carbi/install/carbi_bridge/share/carbi_bridge/package.sh'
+[1.021s] INFO:colcon.colcon_core.shell:Creating package script '/ros2/carbi/install/carbi_bridge/share/carbi_bridge/package.bash'
+[1.024s] INFO:colcon.colcon_core.shell:Creating package script '/ros2/carbi/install/carbi_bridge/share/carbi_bridge/package.zsh'
+[1.027s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ros2/carbi/install/carbi_bridge/share/colcon-core/packages/carbi_bridge)
+[1.029s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/ros2/carbi/src/rplidar_ros2' with build type 'ament_cmake'
+[1.030s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/ros2/carbi/src/rplidar_ros2'
+[1.031s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.033s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.050s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(carbi_robot_description)
+[1.051s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_robot_description' for CMake module files
+[1.056s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_robot_description' for CMake config files
+[1.063s] Level 1:colcon.colcon_core.shell:create_environment_hook('carbi_robot_description', 'cmake_prefix_path')
+[1.064s] INFO:colcon.colcon_core.shell:Creating environment hook '/ros2/carbi/install/carbi_robot_description/share/carbi_robot_description/hook/cmake_prefix_path.ps1'
+[1.066s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ros2/carbi/install/carbi_robot_description/share/carbi_robot_description/hook/cmake_prefix_path.dsv'
+[1.069s] INFO:colcon.colcon_core.shell:Creating environment hook '/ros2/carbi/install/carbi_robot_description/share/carbi_robot_description/hook/cmake_prefix_path.sh'
+[1.072s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_robot_description/bin'
+[1.073s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_robot_description/lib/pkgconfig/carbi_robot_description.pc'
+[1.075s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_robot_description/lib/python3.10/site-packages'
+[1.075s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_robot_description/bin'
+[1.077s] INFO:colcon.colcon_core.shell:Creating package script '/ros2/carbi/install/carbi_robot_description/share/carbi_robot_description/package.ps1'
+[1.079s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ros2/carbi/install/carbi_robot_description/share/carbi_robot_description/package.dsv'
+[1.082s] INFO:colcon.colcon_core.shell:Creating package script '/ros2/carbi/install/carbi_robot_description/share/carbi_robot_description/package.sh'
+[1.084s] INFO:colcon.colcon_core.shell:Creating package script '/ros2/carbi/install/carbi_robot_description/share/carbi_robot_description/package.bash'
+[1.086s] INFO:colcon.colcon_core.shell:Creating package script '/ros2/carbi/install/carbi_robot_description/share/carbi_robot_description/package.zsh'
+[1.089s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ros2/carbi/install/carbi_robot_description/share/colcon-core/packages/carbi_robot_description)
+[1.094s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(carbi_sensor_interface)
+[1.096s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_sensor_interface' for CMake module files
+[1.097s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_sensor_interface' for CMake config files
+[1.097s] Level 1:colcon.colcon_core.shell:create_environment_hook('carbi_sensor_interface', 'cmake_prefix_path')
+[1.098s] INFO:colcon.colcon_core.shell:Creating environment hook '/ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/hook/cmake_prefix_path.ps1'
+[1.099s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/hook/cmake_prefix_path.dsv'
+[1.100s] INFO:colcon.colcon_core.shell:Creating environment hook '/ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/hook/cmake_prefix_path.sh'
+[1.102s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_sensor_interface/lib'
+[1.102s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_sensor_interface/bin'
+[1.103s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_sensor_interface/lib/pkgconfig/carbi_sensor_interface.pc'
+[1.103s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_sensor_interface/lib/python3.10/site-packages'
+[1.103s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_sensor_interface/bin'
+[1.104s] INFO:colcon.colcon_core.shell:Creating package script '/ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/package.ps1'
+[1.106s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/package.dsv'
+[1.108s] INFO:colcon.colcon_core.shell:Creating package script '/ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/package.sh'
+[1.110s] INFO:colcon.colcon_core.shell:Creating package script '/ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/package.bash'
+[1.111s] INFO:colcon.colcon_core.shell:Creating package script '/ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/package.zsh'
+[1.113s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ros2/carbi/install/carbi_sensor_interface/share/colcon-core/packages/carbi_sensor_interface)
+[1.114s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(carbi_kinematics)
+[1.115s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_kinematics' for CMake module files
+[1.117s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_kinematics' for CMake config files
+[1.118s] Level 1:colcon.colcon_core.shell:create_environment_hook('carbi_kinematics', 'cmake_prefix_path')
+[1.119s] INFO:colcon.colcon_core.shell:Creating environment hook '/ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/hook/cmake_prefix_path.ps1'
+[1.121s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/hook/cmake_prefix_path.dsv'
+[1.123s] INFO:colcon.colcon_core.shell:Creating environment hook '/ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/hook/cmake_prefix_path.sh'
+[1.125s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_kinematics/lib'
+[1.126s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_kinematics/bin'
+[1.126s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_kinematics/lib/pkgconfig/carbi_kinematics.pc'
+[1.127s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_kinematics/lib/python3.10/site-packages'
+[1.127s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/carbi_kinematics/bin'
+[1.128s] INFO:colcon.colcon_core.shell:Creating package script '/ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/package.ps1'
+[1.130s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/package.dsv'
+[1.132s] INFO:colcon.colcon_core.shell:Creating package script '/ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/package.sh'
+[1.133s] INFO:colcon.colcon_core.shell:Creating package script '/ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/package.bash'
+[1.134s] INFO:colcon.colcon_core.shell:Creating package script '/ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/package.zsh'
+[1.135s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ros2/carbi/install/carbi_kinematics/share/colcon-core/packages/carbi_kinematics)
+[1.147s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ros2/carbi/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /ros2/carbi/build/rplidar_ros -- -j4 -l4
+[1.367s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ros2/carbi/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /ros2/carbi/build/rplidar_ros -- -j4 -l4
+[1.442s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ros2/carbi/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /ros2/carbi/build/rplidar_ros
+[1.472s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rplidar_ros)
+[1.472s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/rplidar_ros' for CMake module files
+[1.473s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ros2/carbi/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /ros2/carbi/build/rplidar_ros
+[1.474s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/rplidar_ros' for CMake config files
+[1.474s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'cmake_prefix_path')
+[1.475s] INFO:colcon.colcon_core.shell:Creating environment hook '/ros2/carbi/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.ps1'
+[1.476s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ros2/carbi/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.dsv'
+[1.478s] INFO:colcon.colcon_core.shell:Creating environment hook '/ros2/carbi/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.sh'
+[1.480s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/rplidar_ros/lib'
+[1.480s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'ld_library_path_lib')
+[1.481s] INFO:colcon.colcon_core.shell:Creating environment hook '/ros2/carbi/install/rplidar_ros/share/rplidar_ros/hook/ld_library_path_lib.ps1'
+[1.482s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ros2/carbi/install/rplidar_ros/share/rplidar_ros/hook/ld_library_path_lib.dsv'
+[1.483s] INFO:colcon.colcon_core.shell:Creating environment hook '/ros2/carbi/install/rplidar_ros/share/rplidar_ros/hook/ld_library_path_lib.sh'
+[1.484s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/rplidar_ros/bin'
+[1.485s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/rplidar_ros/lib/pkgconfig/rplidar_ros.pc'
+[1.485s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/rplidar_ros/lib/python3.10/site-packages'
+[1.486s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/rplidar_ros/bin'
+[1.487s] INFO:colcon.colcon_core.shell:Creating package script '/ros2/carbi/install/rplidar_ros/share/rplidar_ros/package.ps1'
+[1.489s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ros2/carbi/install/rplidar_ros/share/rplidar_ros/package.dsv'
+[1.490s] INFO:colcon.colcon_core.shell:Creating package script '/ros2/carbi/install/rplidar_ros/share/rplidar_ros/package.sh'
+[1.491s] INFO:colcon.colcon_core.shell:Creating package script '/ros2/carbi/install/rplidar_ros/share/rplidar_ros/package.bash'
+[1.492s] INFO:colcon.colcon_core.shell:Creating package script '/ros2/carbi/install/rplidar_ros/share/rplidar_ros/package.zsh'
+[1.493s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ros2/carbi/install/rplidar_ros/share/colcon-core/packages/rplidar_ros)
+[1.569s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rplidar_ros)
+[1.570s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/rplidar_ros' for CMake module files
+[1.571s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/rplidar_ros' for CMake config files
+[1.571s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'cmake_prefix_path')
+[1.572s] INFO:colcon.colcon_core.shell:Creating environment hook '/ros2/carbi/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.ps1'
+[1.572s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ros2/carbi/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.dsv'
+[1.573s] INFO:colcon.colcon_core.shell:Creating environment hook '/ros2/carbi/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.sh'
+[1.574s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/rplidar_ros/lib'
+[1.574s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'ld_library_path_lib')
+[1.574s] INFO:colcon.colcon_core.shell:Creating environment hook '/ros2/carbi/install/rplidar_ros/share/rplidar_ros/hook/ld_library_path_lib.ps1'
+[1.575s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ros2/carbi/install/rplidar_ros/share/rplidar_ros/hook/ld_library_path_lib.dsv'
+[1.576s] INFO:colcon.colcon_core.shell:Creating environment hook '/ros2/carbi/install/rplidar_ros/share/rplidar_ros/hook/ld_library_path_lib.sh'
+[1.577s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/rplidar_ros/bin'
+[1.577s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/rplidar_ros/lib/pkgconfig/rplidar_ros.pc'
+[1.577s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/rplidar_ros/lib/python3.10/site-packages'
+[1.577s] Level 1:colcon.colcon_core.environment:checking '/ros2/carbi/install/rplidar_ros/bin'
+[1.578s] INFO:colcon.colcon_core.shell:Creating package script '/ros2/carbi/install/rplidar_ros/share/rplidar_ros/package.ps1'
+[1.579s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ros2/carbi/install/rplidar_ros/share/rplidar_ros/package.dsv'
+[1.580s] INFO:colcon.colcon_core.shell:Creating package script '/ros2/carbi/install/rplidar_ros/share/rplidar_ros/package.sh'
+[1.580s] INFO:colcon.colcon_core.shell:Creating package script '/ros2/carbi/install/rplidar_ros/share/rplidar_ros/package.bash'
+[1.581s] INFO:colcon.colcon_core.shell:Creating package script '/ros2/carbi/install/rplidar_ros/share/rplidar_ros/package.zsh'
+[1.581s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ros2/carbi/install/rplidar_ros/share/colcon-core/packages/rplidar_ros)
+[1.582s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.582s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.583s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.583s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.632s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[1.632s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.633s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.633s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.639s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[1.639s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.640s] INFO:colcon.colcon_core.shell:Creating prefix script '/ros2/carbi/install/local_setup.ps1'
+[1.642s] INFO:colcon.colcon_core.shell:Creating prefix util module '/ros2/carbi/install/_local_setup_util_ps1.py'
+[1.644s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/ros2/carbi/install/setup.ps1'
+[1.646s] INFO:colcon.colcon_core.shell:Creating prefix script '/ros2/carbi/install/local_setup.sh'
+[1.647s] INFO:colcon.colcon_core.shell:Creating prefix util module '/ros2/carbi/install/_local_setup_util_sh.py'
+[1.648s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/ros2/carbi/install/setup.sh'
+[1.650s] INFO:colcon.colcon_core.shell:Creating prefix script '/ros2/carbi/install/local_setup.bash'
+[1.650s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/ros2/carbi/install/setup.bash'
+[1.652s] INFO:colcon.colcon_core.shell:Creating prefix script '/ros2/carbi/install/local_setup.zsh'
+[1.653s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/ros2/carbi/install/setup.zsh'

@@ -1,0 +1,4 @@
+source;share/carbi_robot_description/local_setup.bash
+source;share/carbi_robot_description/local_setup.dsv
+source;share/carbi_robot_description/local_setup.sh
+source;share/carbi_robot_description/local_setup.zsh

@@ -1,0 +1,47 @@
+[0.034s] Invoking command in '/ros2/carbi/build/carbi_kinematics': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /ros2/carbi/src/carbi_kinematics -DCMAKE_INSTALL_PREFIX=/ros2/carbi/install/carbi_kinematics
+[0.894s] -- The C compiler identification is GNU 11.4.0
+[1.311s] -- The CXX compiler identification is GNU 11.4.0
+[1.335s] -- Detecting C compiler ABI info
+[1.537s] -- Detecting C compiler ABI info - done
+[1.549s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.551s] -- Detecting C compile features
+[1.554s] -- Detecting C compile features - done
+[1.562s] -- Detecting CXX compiler ABI info
+[1.783s] -- Detecting CXX compiler ABI info - done
+[1.795s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.795s] -- Detecting CXX compile features
+[1.795s] -- Detecting CXX compile features - done
+[1.806s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.136s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.384s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.562s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.563s] -- Added test 'lint_cmake' to check CMake code style
+[2.565s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.567s] -- Added test 'xmllint' to check XML markup files
+[2.571s] -- Configuring done
+[2.575s] -- Generating done
+[2.578s] -- Build files have been written to: /ros2/carbi/build/carbi_kinematics
+[2.587s] Invoked command in '/ros2/carbi/build/carbi_kinematics' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /ros2/carbi/src/carbi_kinematics -DCMAKE_INSTALL_PREFIX=/ros2/carbi/install/carbi_kinematics
+[2.590s] Invoking command in '/ros2/carbi/build/carbi_kinematics': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ros2/carbi/build/carbi_kinematics -- -j4 -l4
+[2.682s] Invoked command in '/ros2/carbi/build/carbi_kinematics' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ros2/carbi/build/carbi_kinematics -- -j4 -l4
+[2.792s] Invoking command in '/ros2/carbi/build/carbi_kinematics': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ros2/carbi/build/carbi_kinematics
+[2.826s] -- Install configuration: ""
+[2.827s] -- Installing: /ros2/carbi/install/carbi_kinematics/lib/carbi_kinematics/kinematics.py
+[2.829s] -- Installing: /ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/scripts
+[2.833s] -- Installing: /ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/scripts/kinematics.py
+[2.833s] -- Installing: /ros2/carbi/install/carbi_kinematics/share/ament_index/resource_index/package_run_dependencies/carbi_kinematics
+[2.834s] -- Installing: /ros2/carbi/install/carbi_kinematics/share/ament_index/resource_index/parent_prefix_path/carbi_kinematics
+[2.837s] -- Installing: /ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/environment/ament_prefix_path.sh
+[2.837s] -- Installing: /ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/environment/ament_prefix_path.dsv
+[2.837s] -- Installing: /ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/environment/path.sh
+[2.837s] -- Installing: /ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/environment/path.dsv
+[2.838s] -- Installing: /ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/local_setup.bash
+[2.838s] -- Installing: /ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/local_setup.sh
+[2.838s] -- Installing: /ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/local_setup.zsh
+[2.838s] -- Installing: /ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/local_setup.dsv
+[2.839s] -- Installing: /ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/package.dsv
+[2.839s] -- Installing: /ros2/carbi/install/carbi_kinematics/share/ament_index/resource_index/packages/carbi_kinematics
+[2.839s] -- Installing: /ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/cmake/carbi_kinematicsConfig.cmake
+[2.839s] -- Installing: /ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/cmake/carbi_kinematicsConfig-version.cmake
+[2.840s] -- Installing: /ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/package.xml
+[2.880s] Invoked command in '/ros2/carbi/build/carbi_kinematics' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ros2/carbi/build/carbi_kinematics

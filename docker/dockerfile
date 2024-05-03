@@ -1,5 +1,6 @@
 # This is an auto generated Dockerfile for ros:ros-base
 # generated from docker_images_ros2/create_ros_image.Dockerfile.em
+
 FROM ros:humble-ros-core-jammy
 
 # install bootstrap tools
@@ -10,6 +11,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     python3-colcon-mixin \
     python3-rosdep \
     python3-vcstool \
+    python3-pip\
     && rm -rf /var/lib/apt/lists/*
 
 # bootstrap rosdep
@@ -24,6 +26,17 @@ RUN colcon mixin add default \
       https://raw.githubusercontent.com/colcon/colcon-metadata-repository/master/index.yaml && \
     colcon metadata update
 
+# install imu interface
+RUN sudo pip3 install smbus2
+RUN sudo pip3 install smbus
+# RUN sudo pip3 install imusensor
+RUN sudo pip3 install easydict
+
+# install camera interface
+RUN sudo pip3 install pyrealsense2
+RUN sudo pip3 install cv-bridge
+RUN sudo pip3 install opencv-python
+
 # install ros2 packages
 RUN apt-get update && apt-get install -y --no-install-recommends \
     ros-humble-desktop=0.10.0-1* 
@@ -31,4 +44,9 @@ RUN apt-get update
 RUN apt-get install ros-humble-xacro
 RUN apt-get install -y --no-install-recommends ros-humble-navigation2 ros-humble-nav2-bringup
 RUN apt-get install nano -y --no-install-recommends
+RUN apt-get install -y ros-humble-slam-toolbox
+RUN apt-get install -y ros-humble-plotjuggler-ros
+RUN apt-get install -y ros-humble-rtabmap
+RUN apt-get install -y ros-humble-rtabmap-ros
+
 RUN sudo echo "source /opt/ros/humble/setup.bash" >> /root/.bashrc

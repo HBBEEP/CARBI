@@ -1,0 +1,17 @@
+/ros2/carbi/install/carbi_kinematics/lib/carbi_kinematics/kinematics.py
+/ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/scripts/kinematics.py
+/ros2/carbi/install/carbi_kinematics/share/ament_index/resource_index/package_run_dependencies/carbi_kinematics
+/ros2/carbi/install/carbi_kinematics/share/ament_index/resource_index/parent_prefix_path/carbi_kinematics
+/ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/environment/ament_prefix_path.sh
+/ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/environment/ament_prefix_path.dsv
+/ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/environment/path.sh
+/ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/environment/path.dsv
+/ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/local_setup.bash
+/ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/local_setup.sh
+/ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/local_setup.zsh
+/ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/local_setup.dsv
+/ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/package.dsv
+/ros2/carbi/install/carbi_kinematics/share/ament_index/resource_index/packages/carbi_kinematics
+/ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/cmake/carbi_kinematicsConfig.cmake
+/ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/cmake/carbi_kinematicsConfig-version.cmake
+/ros2/carbi/install/carbi_kinematics/share/carbi_kinematics/package.xml

@@ -1,0 +1,32 @@
+-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /ros2/carbi/build/carbi_sensor_interface
+-- Install configuration: ""
+-- Installing: /ros2/carbi/install/carbi_sensor_interface/lib/carbi_sensor_interface/camera_interface.py
+-- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/lib/carbi_sensor_interface/imu_interface.py
+-- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/lib/carbi_sensor_interface/mpu9250_i2c.py
+-- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/scripts
+-- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/scripts/imu_interface.py
+-- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/scripts/mpu9250_i2c.py
+-- Installing: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/scripts/camera_interface.py
+-- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/ament_index/resource_index/package_run_dependencies/carbi_sensor_interface
+-- Installing: /ros2/carbi/install/carbi_sensor_interface/share/ament_index/resource_index/parent_prefix_path/carbi_sensor_interface
+-- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/environment/ament_prefix_path.sh
+-- Installing: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/environment/ament_prefix_path.dsv
+-- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/environment/path.sh
+-- Installing: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/environment/path.dsv
+-- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/local_setup.bash
+-- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/local_setup.sh
+-- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/local_setup.zsh
+-- Installing: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/local_setup.dsv
+-- Installing: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/package.dsv
+-- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/ament_index/resource_index/packages/carbi_sensor_interface
+-- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/cmake/carbi_sensor_interfaceConfig.cmake
+-- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/cmake/carbi_sensor_interfaceConfig-version.cmake
+-- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/package.xml

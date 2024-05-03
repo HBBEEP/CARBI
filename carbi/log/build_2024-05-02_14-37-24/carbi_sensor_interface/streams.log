@@ -1,0 +1,28 @@
+[0.050s] Invoking command in '/ros2/carbi/build/carbi_sensor_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ros2/carbi/build/carbi_sensor_interface -- -j4 -l4
+[0.160s] Invoked command in '/ros2/carbi/build/carbi_sensor_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ros2/carbi/build/carbi_sensor_interface -- -j4 -l4
+[0.230s] Invoking command in '/ros2/carbi/build/carbi_sensor_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ros2/carbi/build/carbi_sensor_interface
+[0.265s] -- Install configuration: ""
+[0.266s] -- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/lib/carbi_sensor_interface/camera_interface.py
+[0.266s] -- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/lib/carbi_sensor_interface/imu_interface.py
+[0.266s] -- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/lib/carbi_sensor_interface/mpu9250_i2c.py
+[0.266s] -- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/scripts
+[0.267s] -- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/scripts/imu_interface.py
+[0.267s] -- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/scripts/mpu9250_i2c.py
+[0.270s] -- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/scripts/camera_interface.py
+[0.270s] -- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/scripts/test.py
+[0.271s] -- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/ament_index/resource_index/package_run_dependencies/carbi_sensor_interface
+[0.272s] -- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/ament_index/resource_index/parent_prefix_path/carbi_sensor_interface
+[0.273s] -- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/environment/ament_prefix_path.sh
+[0.273s] -- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/environment/ament_prefix_path.dsv
+[0.273s] -- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/environment/path.sh
+[0.273s] -- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/environment/path.dsv
+[0.273s] -- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/local_setup.bash
+[0.274s] -- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/local_setup.sh
+[0.274s] -- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/local_setup.zsh
+[0.274s] -- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/local_setup.dsv
+[0.274s] -- Installing: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/package.dsv
+[0.275s] -- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/ament_index/resource_index/packages/carbi_sensor_interface
+[0.275s] -- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/cmake/carbi_sensor_interfaceConfig.cmake
+[0.275s] -- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/cmake/carbi_sensor_interfaceConfig-version.cmake
+[0.276s] -- Up-to-date: /ros2/carbi/install/carbi_sensor_interface/share/carbi_sensor_interface/package.xml
+[0.338s] Invoked command in '/ros2/carbi/build/carbi_sensor_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ros2/carbi/build/carbi_sensor_interface
