@@ -1,2 +1,0 @@
-Invoking command in '/ros2/carbi/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /ros2/carbi/build/rplidar_ros -- -j4 -l4
-Invoked command in '/ros2/carbi/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /ros2/carbi/build/rplidar_ros -- -j4 -l4

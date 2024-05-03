@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(carbi_sensor_interface)
+project(carbi_navigation)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -22,18 +22,5 @@ if(BUILD_TESTING)
   set(ament_cmake_cpplint_FOUND TRUE)
   ament_lint_auto_find_test_dependencies()
 endif()
-
-install(PROGRAMS
-  scripts/camera_interface.py
-  scripts/camera_subscription.py
-  scripts/imu_interface.py
-  scripts/mpu9250_i2c.py
-  DESTINATION lib/${PROJECT_NAME}
-)
-
-install(DIRECTORY
-  # add directories here
-  scripts
-  DESTINATION share/${PROJECT_NAME})
 
 ament_package()

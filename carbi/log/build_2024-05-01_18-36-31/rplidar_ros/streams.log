@@ -1,4 +1,0 @@
-[0.036s] Invoking command in '/ros2/carbi/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /ros2/carbi/build/rplidar_ros -- -j4 -l4
-[0.288s] [ 77%] Built target rplidar_composition_node
-[0.360s] [100%] Built target rplidar_composition
-[0.436s] Invoked command in '/ros2/carbi/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /ros2/carbi/build/rplidar_ros -- -j4 -l4

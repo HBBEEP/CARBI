@@ -1,6 +1,0 @@
-Invoking command in '/ros2/carbi/build/carbi_kinematics': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /ros2/carbi/src/carbi_kinematics -DCMAKE_INSTALL_PREFIX=/ros2/carbi/install/carbi_kinematics
-Invoked command in '/ros2/carbi/build/carbi_kinematics' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /ros2/carbi/src/carbi_kinematics -DCMAKE_INSTALL_PREFIX=/ros2/carbi/install/carbi_kinematics
-Invoking command in '/ros2/carbi/build/carbi_kinematics': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ros2/carbi/build/carbi_kinematics -- -j4 -l4
-Invoked command in '/ros2/carbi/build/carbi_kinematics' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ros2/carbi/build/carbi_kinematics -- -j4 -l4
-Invoking command in '/ros2/carbi/build/carbi_kinematics': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ros2/carbi/build/carbi_kinematics
-Invoked command in '/ros2/carbi/build/carbi_kinematics' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ros2/carbi/build/carbi_kinematics

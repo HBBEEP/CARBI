@@ -1,9 +1,0 @@
-/ros2/carbi/build/carbi_sensor_interface/CMakeFiles/uninstall.dir
-/ros2/carbi/build/carbi_sensor_interface/CMakeFiles/carbi_sensor_interface_uninstall.dir
-/ros2/carbi/build/carbi_sensor_interface/CMakeFiles/test.dir
-/ros2/carbi/build/carbi_sensor_interface/CMakeFiles/edit_cache.dir
-/ros2/carbi/build/carbi_sensor_interface/CMakeFiles/rebuild_cache.dir
-/ros2/carbi/build/carbi_sensor_interface/CMakeFiles/list_install_components.dir
-/ros2/carbi/build/carbi_sensor_interface/CMakeFiles/install.dir
-/ros2/carbi/build/carbi_sensor_interface/CMakeFiles/install/local.dir
-/ros2/carbi/build/carbi_sensor_interface/CMakeFiles/install/strip.dir

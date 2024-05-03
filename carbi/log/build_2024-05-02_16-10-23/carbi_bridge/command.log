@@ -1,4 +1,0 @@
-Invoking command in '/ros2/carbi/build/carbi_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ros2/carbi/build/carbi_bridge -- -j4 -l4
-Invoked command in '/ros2/carbi/build/carbi_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ros2/carbi/build/carbi_bridge -- -j4 -l4
-Invoking command in '/ros2/carbi/build/carbi_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ros2/carbi/build/carbi_bridge
-Invoked command in '/ros2/carbi/build/carbi_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ros2/carbi/build/carbi_bridge

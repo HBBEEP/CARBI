@@ -1,6 +1,0 @@
-Invoking command in '/ros2/carbi/build/carbi_robot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /ros2/carbi/src/carbi_robot_description -DCMAKE_INSTALL_PREFIX=/ros2/carbi/install/carbi_robot_description
-Invoked command in '/ros2/carbi/build/carbi_robot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /ros2/carbi/src/carbi_robot_description -DCMAKE_INSTALL_PREFIX=/ros2/carbi/install/carbi_robot_description
-Invoking command in '/ros2/carbi/build/carbi_robot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ros2/carbi/build/carbi_robot_description -- -j4 -l4
-Invoked command in '/ros2/carbi/build/carbi_robot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ros2/carbi/build/carbi_robot_description -- -j4 -l4
-Invoking command in '/ros2/carbi/build/carbi_robot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ros2/carbi/build/carbi_robot_description
-Invoked command in '/ros2/carbi/build/carbi_robot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ros2/carbi/build/carbi_robot_description
