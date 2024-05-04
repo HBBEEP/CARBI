@@ -7,6 +7,7 @@ import numpy as np
 import tf2_ros
 from tf2_ros import LookupException, ConnectivityException, ExtrapolationException
 import tf_transformations
+from geometry_msgs.msg import PointStamped
 
 class CarbiGoToGoal(Node):
     def __init__(self):
@@ -24,6 +25,12 @@ class CarbiGoToGoal(Node):
         self.twist_publisher = self.create_publisher(Twist, '/cmd_vel', 10)
         self.set_target_subscription = self.create_subscription(Float32MultiArray, '/target_pos', self.set_target_pos, 10)
 
+        self.clicked_point_subscription = self.create_subscription(PointStamped,'/clicked_point',self.point_callback,10)
+
+    def point_callback(self, msg):
+        self.get_logger().info(f"Received point: [{msg.point.x}, {msg.point.y}]")
+        self.target_pos[0] = msg.point.x
+        self.target_pos[1] = msg.point.y
 
     def update(self):
         try:
@@ -34,7 +41,6 @@ class CarbiGoToGoal(Node):
             pose.position.z = trans.transform.translation.z
             pose.orientation = trans.transform.rotation
             self.pose = pose
-            # print(f"x : {pose.position.x}, y : { pose.position.y }")
         except (LookupException, ConnectivityException, ExtrapolationException) as e:
             self.get_logger().error('Could not transform from base_link to map: %s' % str(e))
             return None
