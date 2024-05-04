@@ -24,7 +24,7 @@ if(BUILD_TESTING)
 endif()
 
 install(PROGRAMS
-  scripts/goal_to_goal.py
+  scripts/go_to_goal.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

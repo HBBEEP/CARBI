@@ -6,7 +6,7 @@ from std_msgs.msg import Float32MultiArray
 from nav_msgs.msg import Odometry
 from geometry_msgs.msg import TransformStamped
 import numpy as np
-from kinematics import inverse_kinematics, forward_kinematics
+from kinematics import forward_kinematics
 import tf_transformations
 import tf2_ros
 from tf2_ros import TransformBroadcaster
@@ -17,7 +17,7 @@ class CarbiBridge(Node):
         # self.create_subscription(Float32MultiArray, '/imu_raw', self.imu_raw_callback, 10)
 
         self.create_subscription(Float32MultiArray, '/wheel_vel', self.wheel_vel_callback, 10)
-
+    
         self.odom_publisher = self.create_publisher(Odometry,'/wheel/odom',10) 
 
         self.tf_buffer = tf2_ros.Buffer()
@@ -32,17 +32,16 @@ class CarbiBridge(Node):
         self.robot_position = [0.0, 0.0, 0.0] 
         self.wheel_vel = [0.0, 0.0, 0.0, 0.0] 
 
-
     def update(self):
         self.calculate_wheel_odometry()
         self.publish_odometry()
+    
     # def imu_raw_callback(self, msg):
     #     self.imu_raw = msg.data 
 
     def wheel_vel_callback(self, msg):
         wheel_vel =  msg.data        
         self.robot_twist = forward_kinematics(wheel_vel)
-        # print(f"robot twist : {self.robot_twist}")
         
     def calculate_wheel_odometry(self):
         dx = self.robot_twist[0] * self.time_step
@@ -77,7 +76,7 @@ class CarbiBridge(Node):
         odom.twist.twist.angular.x = 0.0
         odom.twist.twist.angular.y = 0.0
         odom.twist.twist.angular.z = self.robot_twist[2]
-        # print(self.robot_position[0], self.robot_position[1] )
+        # self.get_logger().info(f" {self.robot_position[0]}, {self.robot_position[1]}")
 
         self.odom_publisher.publish(odom)
 
@@ -96,6 +95,7 @@ class CarbiBridge(Node):
         t.transform.rotation.w = q[3]
         self.publish_transform.sendTransform(t)
 
+        
 
 def main(args=None):
     rclpy.init(args=args)

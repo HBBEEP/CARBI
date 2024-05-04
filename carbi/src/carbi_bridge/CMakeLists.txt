@@ -26,6 +26,7 @@ endif()
 install(PROGRAMS
   scripts/bridge.py
   scripts/kinematics.py
+  scripts/carbi_sim.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

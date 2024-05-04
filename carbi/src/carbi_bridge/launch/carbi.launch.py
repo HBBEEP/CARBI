@@ -9,6 +9,11 @@ def generate_launch_description():
         executable = "bridge.py"
     )
 
+    carbi_sim = Node(
+        package = "carbi_bridge",
+        executable = "carbi_sim.py"
+    )
+
     lidar_interface = Node(
         package = "rplidar_ros",
         executable = "rplidar_composition"
@@ -16,5 +21,6 @@ def generate_launch_description():
     
     return LaunchDescription([
         carbi_bridge,
-        lidar_interface
+        carbi_sim
+        # lidar_interface
     ])
