@@ -9,11 +9,15 @@ import numpy as np
 import time
 
 
-class CarbiCamera(Node):
+class CarbiCameraPubisher(Node):
     def __init__(self):
-        super().__init__("intel_publisher")
-        self.intel_publisher_rgb = self.create_publisher(Image, "rgb_frame", 10)
+        super().__init__("carbi_camera_pub")
+        self.rgb_publisher = self.create_publisher(Image, "img/rgb", 10)
+        self.depth_publisher = self.create_publisher(Image, "img/depth", 10)
 
+
+        self.rtab_depth_publisher = self.create_publisher(Image, '/camera/depth_registered/image_raw', 10)
+        self.rtab_rgb_publisher = self.create_publisher(Image, '/camera/rgb/image_rect_color', 10) 
         timer_period = 0.01
         self.br_rgb = CvBridge()
 
@@ -31,17 +35,29 @@ class CarbiCamera(Node):
 
     def timer_callback(self):
         frames = self.pipe.wait_for_frames()
-        # color_frame = frames.get_depth_frame()
+        depth_frame = frames.get_depth_frame()
         color_frame = frames.get_color_frame()
-        color_image = np.asanyarray(color_frame.get_data())
 
-        self.intel_publisher_rgb.publish(self.br_rgb.cv2_to_imgmsg(color_image))
+        color_image = np.asanyarray(color_frame.get_data())
+        depth_image = np.asanyarray(depth_frame.get_data())
+
+        depth_cm = cv2.applyColorMap(cv2.convertScaleAbs(depth_image,
+                                     alpha = 0.5), cv2.COLORMAP_JET)
+
+        self.rgb_publisher.publish(self.br_rgb.cv2_to_imgmsg(color_image))
+        self.depth_publisher.publish(self.br_rgb.cv2_to_imgmsg(depth_cm))    
+
+
+        self.rtab_rgb_publisher.publish(self.br_rgb.cv2_to_imgmsg(color_image))
+        self.rtab_depth_publisher.publish(self.br_rgb.cv2_to_imgmsg(depth_cm))    
+
+
 
 
 
 def main(args=None):
     rclpy.init(args=args)
-    image_publisher = CarbiCamera()
+    image_publisher = CarbiCameraPubisher()
     rclpy.spin(image_publisher)
     image_publisher.destroy_node()
     rclpy.shutdown()

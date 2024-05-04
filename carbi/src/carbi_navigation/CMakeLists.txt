@@ -23,4 +23,14 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
+install(PROGRAMS
+  scripts/goal_to_goal.py
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+install(DIRECTORY
+  # add directories here
+  scripts
+  DESTINATION share/${PROJECT_NAME})
+
 ament_package()
