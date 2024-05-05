@@ -62,14 +62,18 @@ class CarbiGoToGoal(Node):
         K = 0.50
         w = K * np.arctan2(np.sin(e), np.cos(e))
 
-        vx = dp[0] if dp[0] < 2.0 else 2.0
-        vy = dp[1] if dp[1] < 2.0 else 2.0
+        opp_x = -1 if dp[0] < 0.0 else 1
+        opp_y = -1 if dp[1] < 0.0 else 1
 
-        if np.linalg.norm(dp) < 0.3:
+        vx = dp[0] if abs(dp[0]) < 0.5 else 0.5 * opp_x
+        vy = dp[1] if abs(dp[1]) < 0.5 else 0.5 * opp_y
+
+        if np.linalg.norm(dp) < 0.1:
             vx = 0.0
             vy = 0.0
             w = 0.0
 
+        print(vx,vy,w)
         msg.linear.x = vx
         msg.linear.y = vy
         msg.angular.z = w
