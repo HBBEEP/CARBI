@@ -37,7 +37,7 @@ class CarbiController(Node):
     def connecting(self):
         while(not self.setup):
             try:
-                self.port = serial.Serial("/dev/ttyUSB0", 115200, timeout=1)
+                self.port = serial.Serial("/dev/ttyUSB1", 115200, timeout=1)
 
             except:
                 if(time.time() - self.prev > 2):

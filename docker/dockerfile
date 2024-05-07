@@ -15,8 +15,8 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     && rm -rf /var/lib/apt/lists/*
 
 # bootstrap rosdep
-RUN rosdep init && \
-  rosdep update --rosdistro $ROS_DISTRO
+RUN sudo rosdep init && \
+  sudo rosdep update --rosdistro $ROS_DISTRO
 
 # setup colcon mixin and metadata
 RUN colcon mixin add default \
@@ -35,7 +35,9 @@ RUN sudo pip3 install pyrealsense2
 RUN sudo pip3 install cv-bridge
 RUN sudo pip3 install opencv-python
 
-
+# install motor interface
+RUN sudo pip3 install serial
+RUN sudo pip3 install pyserial
 
 # install ros2 packages
 RUN apt-get update && apt-get install -y --no-install-recommends \
