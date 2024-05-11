@@ -2,42 +2,55 @@
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Float32MultiArray
+from geometry_msgs.msg import Twist
+from kinematics import inverse_kinematics
 import serial
 import time
+
+MOTOR_A = 0
+MOTOR_B = 1
+MOTOR_C = 2
+MOTOR_D = 3
+
+MOTOR_PWM = 0
+MOTOR_VALOCITY = 1
+RESET = 2
 
 class CarbiController(Node):
     def __init__(self):
         super().__init__('carbi_controller')
-        self.timer_ = self.create_timer(0.1, self.timer_callback)
+
+        self.timer_ = self.create_timer(0.01, self.timer_callback)
+        self.wheel_vel_publisher = self.create_publisher(Float32MultiArray, '/wheel_vel', 50)
+        self.create_subscription(Twist, '/cmd_vel', self.set_speed_cmd, 10)
+
+        self.wheel_vel_msg = Float32MultiArray()
+
+        self.mode = RESET
+
+        self.prev = time.time()
         self.setup = False
         self.port = None
-        self.prev = time.time()
         self.connecting()
-        self.cmd = 'r'
 
-    def read_ser(self,num_char):
-        string = self.port.read(num_char)
-        return string.decode()
-
-    def write_ser(self,cmd):
-        cmd = cmd + '\n'
+    def serial_velocity_control(self,wheel_vel):
+        cmd = 'v'+' '+str(round(wheel_vel[0],2))+' '+str(round(wheel_vel[1],2))+' '+str(round(wheel_vel[2],2))+' '+str(round(wheel_vel[3],2))+'\n'
         self.port.write(cmd.encode())
 
-    def timer_callback(self):
-        string = self.read_ser(4)
-        if(len(string)):
-            print(string)
-        if self.cmd=='s':
-            print(float(string))
+    def set_speed_cmd(self, msg):
+        wheel_vel = inverse_kinematics([msg.linear.x, msg.linear.y, msg.angular.z])
+        self.mode = MOTOR_VALOCITY
+        self.serial_velocity_control(wheel_vel)
 
-        self.cmd = input()
-        if(self.cmd):
-            self.write_ser(self.cmd)
+
+    def timer_callback(self):
+        serialSub = self.port.readline().decode('ascii')
+        print(serialSub)
 
     def connecting(self):
         while(not self.setup):
             try:
-                self.port = serial.Serial("/dev/ttyUSB1", 115200, timeout=1)
+                self.port = serial.Serial("/dev/ttyUSB0", 115200, timeout=1)
 
             except:
                 if(time.time() - self.prev > 2):
