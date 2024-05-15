@@ -42,5 +42,5 @@ ros2 run carbi_navigation go_to_goal.py
 ## Robot Control
 
 ```
-ros2 launch carbi_control carbi_controller.py
+ros2 run carbi_control carbi_controller.py
 ```
