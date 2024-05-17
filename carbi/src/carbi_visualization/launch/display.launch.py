@@ -19,10 +19,15 @@ def generate_launch_description():
     robot_description = ParameterValue(Command(["xacro ", LaunchConfiguration("model")]),
                                        value_type=str)
 
+    use_sim_time_arg = DeclareLaunchArgument(
+        name="use_sim_time",
+        default_value="false",
+        description="Use simulation (ROS time) instead of real time"
+    )
     robot_state_publisher_node = Node(
         package="robot_state_publisher",
         executable="robot_state_publisher",
-        parameters=[{"robot_description": robot_description}]
+        parameters=[{"robot_description": robot_description, 'use_sim_time': LaunchConfiguration('use_sim_time')} ]
     )
 
     rviz_node = Node(
@@ -33,8 +38,18 @@ def generate_launch_description():
         arguments=["-d", os.path.join(robot_description_dir, "rviz", "display.rviz")],
     )
 
+    laser_filter_node = Node(
+        package="laser_filters",
+        executable="scan_to_scan_filter_chain",
+        name="laser_filter",
+        parameters=["ros2/carbi/src/carbi_visualization/config/laserscan_filter.yaml"]
+    )
+
+
     return LaunchDescription([
         model_arg,
+        use_sim_time_arg,
         robot_state_publisher_node,
-        rviz_node
+        rviz_node,
+        laser_filter_node
     ])

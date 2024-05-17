@@ -10,7 +10,8 @@ Panels:
         - /RobotModel1/Description Topic1
         - /TF1
         - /LaserScan1
-        - /LaserScan1/Status1
+        - /Map1
+        - /Map1/Status1
       Splitter Ratio: 0.5
     Tree Height: 720
   - Class: rviz_common/Selection
@@ -79,6 +80,11 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        laser_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         wheel_left_back:
           Alpha: 1
           Show Axes: false
@@ -118,6 +124,10 @@ Visualization Manager:
           Value: true
         laser_frame:
           Value: true
+        map:
+          Value: true
+        odom:
+          Value: true
         wheel_left_back:
           Value: true
         wheel_left_front:
@@ -134,6 +144,8 @@ Visualization Manager:
       Tree:
         base_footprint:
           base_link:
+            laser_frame:
+              {}
             wheel_left_back:
               {}
             wheel_left_front:
@@ -142,7 +154,9 @@ Visualization Manager:
               {}
             wheel_right_front:
               {}
-        laser_frame:
+        map:
+          {}
+        odom:
           {}
       Update Interval: 0
       Value: true
@@ -179,6 +193,27 @@ Visualization Manager:
         Value: /scan
       Use Fixed Frame: true
       Use rainbow: true
+      Value: true
+    - Alpha: 0.699999988079071
+      Class: rviz_default_plugins/Map
+      Color Scheme: map
+      Draw Behind: false
+      Enabled: true
+      Name: Map
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        Filter size: 10
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /map
+      Update Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /map_updates
+      Use Timestamp: false
       Value: true
   Enabled: true
   Global Options:
@@ -244,7 +279,7 @@ Visualization Manager:
       Pitch: 0.37039852142333984
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 0.4703960716724396
+      Yaw: 0.475396066904068
     Saved: ~
 Window Geometry:
   Displays:

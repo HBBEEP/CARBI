@@ -5,18 +5,20 @@ services:
     network_mode: host
     ipc: host
     volumes:
-      - /home/carbi/ros:/home/ros
-      - /home/carbi/carbi-1:/ros2
+      - /home/hbbeep/ros:/home/ros
+      - /home/hbbeep/CARBI-1:/ros2
+    privileged: true
     devices:
-      # - /dev/ttyUSB0:/dev/ttyUSB0
-      # - /dev/ttyUSB1:/dev/ttyUSB1
+      - /dev:/dev
+      - /dev/ttyUSB0:/dev/ttyUSB0
+      - /dev/ttyUSB1:/dev/ttyUSB1
       - /dev/i2c-1:/dev/i2c-1
       - /dev/video0:/dev/video0
-    privileged: true
+      - /dev/video1:/dev/video1
     restart: always
-    # device_cgroup_rules:
-    #   - 'c 81:* rmw'
-    #   - 'c 189:* rmw'
+    device_cgroup_rules:
+      - 'c 81:* rmw'
+      - 'c 189:* rmw'
     tty: true
     environment:
       - DISPLAY

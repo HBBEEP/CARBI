@@ -57,7 +57,7 @@ class CarbiBridge(Node):
         odom = Odometry()
         odom.header.stamp = self.get_clock().now().to_msg()
         odom.header.frame_id = "odom"
-        odom.child_frame_id = "base_link"
+        odom.child_frame_id = "base_footprint"
 
         odom.pose.pose.position.x = self.robot_position[0] 
         odom.pose.pose.position.y = self.robot_position[1] 
@@ -83,8 +83,8 @@ class CarbiBridge(Node):
         t = TransformStamped()
 
         t.header.stamp = self.get_clock().now().to_msg()
-        t.header.frame_id = "base_footprint"
-        t.child_frame_id = "base_link"
+        t.header.frame_id = "odom"
+        t.child_frame_id = "base_footprint"
 
         t.transform.translation.x = odom.pose.pose.position.x
         t.transform.translation.y = odom.pose.pose.position.y

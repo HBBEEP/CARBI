@@ -4,7 +4,7 @@ from rclpy.node import Node
 from std_msgs.msg import Float32MultiArray,Bool
 from geometry_msgs.msg import Twist 
 # from std_msgs.msg import Float32MultiArray
-from carbi_bridge.scripts.kinematics import inverse_kinematics
+from kinematics import inverse_kinematics
 import serial
 import time
 
@@ -45,6 +45,7 @@ class CarbiController(Node):
 
     def set_speed_cmd(self, msg):
         wheel_vel = inverse_kinematics([msg.linear.x, msg.linear.y, msg.angular.z])
+        # wheel_vel = [-2.0,-2.0,-2.0,-2.0]
         self.mode = MOTOR_VALOCITY
         # self.serial_velocity_control([2.00, -2.00, -2.00, 0.00])
         if self.emergencyStatus == False:

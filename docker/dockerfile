@@ -15,8 +15,8 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     && rm -rf /var/lib/apt/lists/*
 
 # bootstrap rosdep
-RUN sudo rosdep init && \
-  sudo rosdep update --rosdistro $ROS_DISTRO
+RUN rosdep init && \
+  rosdep update --rosdistro $ROS_DISTRO
 
 # setup colcon mixin and metadata
 RUN colcon mixin add default \
@@ -35,9 +35,7 @@ RUN sudo pip3 install pyrealsense2
 RUN sudo pip3 install cv-bridge
 RUN sudo pip3 install opencv-python
 
-# install motor interface
-RUN sudo pip3 install serial
-RUN sudo pip3 install pyserial
+
 
 # install ros2 packages
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -49,7 +47,10 @@ RUN apt-get install nano -y --no-install-recommends
 RUN apt-get install -y ros-humble-slam-toolbox
 RUN apt-get install -y ros-humble-plotjuggler-ros
 RUN apt-get install -y ros-humble-tf-transformations
-RUN apt-get install -y ros-humble-rtabmap
+RUN apt-get install -y ros-humble-tf2-tools
+RUN apt-get install -y ros-humble-laser-filters
+
+# RUN apt-get install -y ros-humble-rtabmap
 RUN apt-get install -y ros-humble-rtabmap-ros
 
 RUN apt-get update
