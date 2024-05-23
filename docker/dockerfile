@@ -35,7 +35,7 @@ RUN sudo pip3 install pyrealsense2
 RUN sudo pip3 install cv-bridge
 RUN sudo pip3 install opencv-python
 
-
+RUN sudo pip3 install pyserial
 
 # install ros2 packages
 RUN apt-get update && apt-get install -y --no-install-recommends \

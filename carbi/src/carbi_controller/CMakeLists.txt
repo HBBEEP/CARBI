@@ -26,6 +26,7 @@ endif()
 
 install(PROGRAMS
   scripts/carbi_controller.py
+  scripts/kinematics.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

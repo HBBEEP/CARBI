@@ -36,7 +36,7 @@ class CarbiController(Node):
         self.setup = False
         self.port = None
         self.readStatus = True
-        self.connecting()
+        #self.connecting
 
     def serial_velocity_control(self,wheel_vel):
         cmd = '<'+'v'+','+str(round(wheel_vel[0],2))+','+str(round(wheel_vel[1],2))+','+str(round(wheel_vel[2],2))+','+str(round(wheel_vel[3],2))+'>'+'\n'
@@ -64,6 +64,7 @@ class CarbiController(Node):
         try:
             serialSub = self.port.readline().decode('ascii')
             serialDecode = serialSub.split('/')
+            #print(serialDecode)
             if len(serialDecode[0])<=6:
                 self.wheel_vel_msg.data = [float(serialDecode[0]),float(serialDecode[1]),float(serialDecode[2]),float(serialDecode[3])]
                 self.wheel_vel_publisher.publish(self.wheel_vel_msg)
@@ -72,14 +73,21 @@ class CarbiController(Node):
             self.readStatus = False
 
     def timer_callback(self):
+            if not self.setup:
+                try:
+                    self.port = serial.Serial("/dev/ttyUSB1", 115200, timeout=1)
+                except:
+                    if(time.time() - self.prev > 2):
+                        print("No serial detected, please plug your uController")
+                        self.prev = time.time()
             self.readSerial()
-            while(self.readStatus == False):
-                self.readSerial()
+            #while(self.readStatus == False):
+            #    self.readSerial()
 
     def connecting(self):
         while(not self.setup):
             try:
-                self.port = serial.Serial("/dev/ttyUSB0", 115200, timeout=1)
+                self.port = serial.Serial("/dev/ttyUSB1", 115200, timeout=1)
 
             except:
                 if(time.time() - self.prev > 2):
