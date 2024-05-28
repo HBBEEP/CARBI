@@ -44,8 +44,8 @@ class CarbiBridge(Node):
         self.robot_twist = forward_kinematics(wheel_vel)
         
     def calculate_wheel_odometry(self):
-        dx = self.robot_twist[0] * self.time_step
-        dy = self.robot_twist[1] * self.time_step
+        dx = self.robot_twist[0] * np.cos(self.robot_position[2]) *  self.time_step
+        dy = self.robot_twist[0] * np.sin(self.robot_position[2]) *  self.time_step
         dtheta = self.robot_twist[2] * self.time_step
 
         self.robot_position[0] += dx

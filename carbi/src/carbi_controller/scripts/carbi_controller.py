@@ -21,7 +21,7 @@ class CarbiController(Node):
     def __init__(self):
         super().__init__('carbi_controller')
 
-        self.timer_ = self.create_timer(0.025, self.timer_callback)
+        self.timer_ = self.create_timer(0.01, self.timer_callback)
         self.wheel_vel_publisher = self.create_publisher(Float32MultiArray, '/wheel_vel', 50)
         self.create_subscription(Twist, '/cmd_vel', self.set_speed_cmd, 10)
         self.create_subscription(Bool, '/Emergency', self.emergency_cmd, 10)
