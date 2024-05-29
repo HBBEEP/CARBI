@@ -9,10 +9,10 @@ services:
       - /home/carbi/CARBI-1:/ros2
     privileged: true
     devices:
-#      - /dev:/dev
+   #   - /dev:/dev
       - /dev/ttyUSB0:/dev/ttyUSB0
-      - /dev/ttyUSB1:/dev/ttyUSB1
-      - /dev/ttyUSB2:/dev/ttyUSB2
+  #    - /dev/ttyUSB1:/dev/ttyUSB1
+ #     - /dev/ttyUSB2:/dev/ttyUSB2
       - /dev/i2c-1:/dev/i2c-1
       - /dev/video0:/dev/video0
       - /dev/video1:/dev/video1

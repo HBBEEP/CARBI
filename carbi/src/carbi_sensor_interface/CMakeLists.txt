@@ -28,6 +28,7 @@ install(PROGRAMS
   scripts/camera_subscription.py
   scripts/imu_interface.py
   scripts/mpu9250_i2c.py
+  scripts/imu_mean_calibration.py  
   DESTINATION lib/${PROJECT_NAME}
 )
 
