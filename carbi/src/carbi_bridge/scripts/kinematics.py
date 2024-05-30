@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import numpy as np
 
-ROBOT_WIDTH = 0.340 
+ROBOT_WIDTH = 0.360 
 ROBOT_LENGTH = 0.160 
 WHEEL_RADIUS = 0.076 
 

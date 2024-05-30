@@ -14,6 +14,9 @@ from ament_index_python.packages import get_package_share_directory
 import os
 import yaml
 
+DEG_TO_RAD = 0.0174532925
+# DEG_TO_RAD =1.0
+
 class CarbiBridge(Node):
     def __init__(self):
         super().__init__('carbi_bridge')
@@ -45,6 +48,7 @@ class CarbiBridge(Node):
         self.acc_cov = []
         self.gyro_cov = []
         self.load_yaml_file()
+        self.robot_yaw = 0.0
 
     def update(self):
         self.calculate_wheel_odometry()
@@ -53,17 +57,25 @@ class CarbiBridge(Node):
     def imu_raw_callback(self, msg):
         self.imu_raw = msg.data 
 
+        #yaw_rate = (float(self.imu_raw[5]) - self.gz_offset) * DEG_TO_RAD  if abs((float(self.imu_raw[5]) - self.gz_offset )) * DEG_TO_RAD > 0.02  else 0.0
+
+        #self.robot_yaw += yaw_rate
+        #self.robot_yaw = np.arctan2(np.sin(self.robot_yaw), np.cos(self.robot_yaw))
+        #self.get_logger().info(f"===> {self.robot_yaw, yaw_rate}")
     def wheel_vel_callback(self, msg):
         wheel_vel =  msg.data        
         self.robot_twist = forward_kinematics(wheel_vel)
         
     def calculate_wheel_odometry(self):
-        dx = self.robot_twist[0] * np.cos(self.robot_position[2]) *  self.time_step
-        dy = self.robot_twist[0] * np.sin(self.robot_position[2]) *  self.time_step
+        dx = self.robot_twist[0] * np.cos(self.robot_position[2]) *  self.time_step - (self.robot_twist[1] * np.sin(self.robot_position[2]) * self.time_step)
+
+        dy = self.robot_twist[0] * np.sin(self.robot_position[2]) *  self.time_step + (self.robot_twist[1] * np.cos(self.robot_position[2]) * self.time_step)
         dtheta = self.robot_twist[2] * self.time_step
 
         self.robot_position[0] += dx
         self.robot_position[1] += dy
+        # self.robot_position[2] = self.robot_yaw
+        # self.robot_yaw_prev = self.robot_yaw
         self.robot_position[2] += dtheta
         self.robot_position[2] = np.arctan2(np.sin(self.robot_position[2]), np.cos(self.robot_position[2]))
         

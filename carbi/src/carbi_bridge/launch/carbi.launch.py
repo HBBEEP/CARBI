@@ -25,6 +25,14 @@ def generate_launch_description():
         executable = "rplidar_composition",
     )
 
+    robot_localization = Node(
+        package="robot_localization",
+        executable="ekf_node",
+        name="ekf_filter_node",
+        output="screen",
+        parameters=[os.path.join(get_package_share_directory("carbi_bridge"), 'config', 'ekf.yaml')],
+    )
+
     return LaunchDescription([
         carbi_bridge,
 #        carbi_sim,
@@ -32,5 +40,6 @@ def generate_launch_description():
         # declare_params_file_cmd,
         # log_param_change,
         # start_async_slam_toolbox_node,
-        lidar_interface
+        lidar_interface,
+#	robot_localization
     ])
