@@ -23,6 +23,11 @@ def generate_launch_description():
     lidar_interface = Node(
         package = "rplidar_ros",
         executable = "rplidar_composition",
+	parameters = [ {
+               #  'inverted': True,
+                'angle_compensate': True,
+#                'flip_x_axis': True,
+                'use_sim_time': False}]
     )
 
     robot_localization = Node(
