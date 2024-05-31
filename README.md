@@ -1,17 +1,38 @@
-# CARBI
-## _carbi_
+# CARBI _mecanum mobile robot_
 
-## prerequisite
+## 📖 Description 
 
-RUN in terminal
+CARBI is a mecanum mobile robot equipped with an RPLidar mounted on top. In its current phase, CARBI can generate 2D maps using the RPLidar in conjunction with the slam_toolbox and navigate to specified points (go-to-goal). However, a persistent issue is the inaccurate yaw orientation of CARBI due to slippage of the mecanum wheels during turning, affecting the calculation of wheel odometry. Additional problems will be addressed in the following section topic [🔴 Problem](#problem) 
+
+
+## 👍 Members
+This project is a part of the FRA532 Mobile robotics course. Our team includes:
+
+1. Kullakant Kaewkallaya
+2. Thamakorn Tongyod
+
+
+## ⚙️ Installation pre-requisite
+
+### 0. Clone this repo to your folder and CARBI-1 will be your workspace 
 ```
-xhost local:root
+git clone https://github.com/HBBEEP/CARBI-1.git
 ```
 
-## Docker
+### 1. Clone this rplidar repo to your workspace
+```
+git clone https://github.com/babakhani/rplidar_ros2
+```
+
+### 2. Set Up CARBI environment with Docker 
+
 
 ```
 cd ~/CARBI-1/docker
+```
+
+```
+docker compose build # If your docker is not built
 ```
 
 ```
@@ -25,22 +46,126 @@ then RUN this command in root
 cd ros2/carbi
 ```
 
-## Sim Go to goal
+**Note:**  If you are not familiar with Docker, please follow this tutorial (which I followed too :) )
+
+-> https://www.kevsrobots.com/learn/learn_ros/04_docker_install.html 
+
+
+### 3. remote to raspberry pi 5 by using
+```
+ssh carbi@[IPv4 of raspberry pi 5]  # example -> ssh carbi@99.9.999.99
+```
+**Note:** 
+1. Don't forget to connect internet in raspberry pi 5
+2. You can check the IPv4 address of raspberry pi 5 by using some tools like advance IP scanner program.
+### 3. Run in terminal (your computer) to allow root access to the X server
+```
+xhost local:root
+```
+
+### -> raspberry pi 5 terminal
+![alt text](img&vid/rpi5_terminal.png)
+
+### -> your terminal
+![alt text](img&vid/computer_terminal.png)
+
+## 📡 Teleop
+
+### Terminal 1 (remote to raspberry pi 5)
 
 ```
-ros2 launch carbi_visualization display.launch.py 
+ros2 launch carbi_bridge carbi.launch.py
 ```
 
-```
-ros2 launch carbi_bridge carbi.launch.py 
-```
-
-```
-ros2 run carbi_navigation go_to_goal.py 
-```
-
-## Robot Control
+### Terminal 2 (remote to raspberry pi 5)
 
 ```
 ros2 run carbi_control carbi_controller.py
 ```
+
+### Terminal 3 (your computer or remote to raspberry pi 5 )
+```
+ros2 run teleop_twist_keyboard teleop_twist_keyboard
+```
+
+## Mapping
+
+<video controls src="img&vid/mapping.mp4" title="Title"></video>
+
+### Terminal 1 (remote to raspberry pi 5)
+
+```
+ros2 launch carbi_bridge carbi.launch.py
+```
+
+### Terminal 2 (remote to raspberry pi 5)
+
+```
+ros2 run carbi_control carbi_controller.py
+```
+
+### Terminal 3 (your computer)
+```
+ros2 run teleop_twist_keyboard teleop_twist_keyboard
+```
+
+### Terminal 4 (your computer)
+```
+ros2 launch carbi_navigation mapping.launch.py
+```
+
+**Note** : if map doesn't show -> change **Durability Policy** topic to _**Trasient Local**_
+![alt text](img&vid/fix_map.png)
+
+
+## 💡 Navigation (go to goal)
+<video controls src="img&vid/navigation.mp4" title="Title"></video>
+
+### Terminal 1 (remote to raspberry pi 5)
+
+```
+ros2 launch carbi_bridge carbi.launch.py
+```
+
+### Terminal 2 (remote to raspberry pi 5)
+
+```
+ros2 run carbi_control carbi_controller.py
+```
+
+### Terminal 3 (your computer) 
+```
+ros2 launch carbi_navigation navigation.launch.py
+```
+
+### Terminal 4 (your computer) 
+```
+ros2 launch carbi_navigation justdisplay.launch.py 
+```
+
+## Demo 
+
+### Teleop
+
+<video controls src="img&vid/teleop_demo.mp4" title="Title"></video>
+
+### Go to Goal
+
+<video controls src="img&vid/go_to_goal_demo.mp4" title="Title"></video>
+
+- Here is global cost map
+
+![alt text](img&vid/global_cost_map.png)
+- Here is local cost map
+
+![alt text](img&vid/local_cost_map.png)
+
+## 🔴 Problem
+
+1. 
+2. 
+3. 
+
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
