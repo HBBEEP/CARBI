@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="robot_parts">
+
+    <xacro:property name="fixed_frame" value="base_footprint" />
+
+    <xacro:property name="robot_body" value="0.64 0.5 0.06" />
+    
+    <xacro:property name="wheel_radius" value="0.04" />
+    <xacro:property name="wheel_length" value="0.08" />
+
+    <xacro:property name="wheel_right_back_joint" value="-0.19 -0.34 0" />
+    <xacro:property name="wheel_left_back_joint" value="-0.19 0.34 0" />
+
+    <xacro:property name="wheel_right_front_joint" value="0.19 -0.34 0" />
+    <xacro:property name="wheel_left_front_joint" value="0.19 0.34 0" />
+
+</robot>
