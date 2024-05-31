@@ -60,16 +60,13 @@ class CarbiGoToGoal(Node):
                                                         self.pose.orientation.w])
         e = np.arctan2(dp[1], dp[0]) - theta
         K = 0.50
-        cal_w = K * np.arctan2(np.sin(e), np.cos(e))
-        w = cal_w
+        w = K * np.arctan2(np.sin(e), np.cos(e))
+
         opp_x = -1 if dp[0] < 0.0 else 1
         opp_y = -1 if dp[1] < 0.0 else 1
-        opp_w = -1 if cal_w < 0.0 else 1
 
-        vx = dp[0] if abs(dp[0]) < 0.2 else 0.2 * opp_x
-        vy = dp[1] if abs(dp[1]) < 0.2 else 0.2 * opp_y
-        vy = 0.0
-        # w = cal_w if abs(cal_w) < 0.1 else 0.1 * opp_w
+        vx = dp[0] if abs(dp[0]) < 0.4 else 0.4 * opp_x
+        vy = dp[1] if abs(dp[1]) < 0.4 else 0.4 * opp_y
 
         if np.linalg.norm(dp) < 0.1:
             vx = 0.0
