@@ -40,11 +40,6 @@ def generate_launch_description():
 
     return LaunchDescription([
         carbi_bridge,
-#        carbi_sim,
-        # declare_use_sim_time_argument,
-        # declare_params_file_cmd,
-        # log_param_change,
-        # start_async_slam_toolbox_node,
         lidar_interface,
 #	robot_localization
     ])
