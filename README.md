@@ -143,6 +143,7 @@ ros2 launch carbi_navigation mapping.launch.py
 ```
 
 **Note** : if map doesn't show -> change **Durability Policy** topic to _**Trasient Local**_
+
 ![fix_map](https://github.com/HBBEEP/CARBI/assets/75566343/9f5976b7-7fd2-439b-8be9-d3da4fcde1de)
 
 
@@ -183,10 +184,12 @@ https://github.com/HBBEEP/CARBI/assets/75566343/6e0ab325-5b5f-4c99-aeb5-c4cbf7db
 ### Go to Goal
 https://github.com/HBBEEP/CARBI/assets/75566343/d1e5f386-5c25-4314-a8aa-83ececcffe45
 
-- global cost map
+#### global cost map
+  
 ![global_cost_map](https://github.com/HBBEEP/CARBI/assets/75566343/f164cef7-0c90-47cc-85fa-914b470180db)
 
-- local cost map
+#### local cost map
+  
 ![local_cost_map](https://github.com/HBBEEP/CARBI/assets/75566343/59c2f7a7-7f45-43d1-9841-0280b5625365)
 
 --------
