@@ -90,7 +90,9 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard
 
 ## Mapping
 
-<video controls src="img&vid/mapping.mp4" title="Title"></video>
+
+https://github.com/HBBEEP/CARBI-1/assets/75566343/b92c2808-803a-4ee5-97dc-06fca6750005
+
 
 ### Terminal 1 (remote to raspberry pi 5)
 
@@ -119,7 +121,11 @@ ros2 launch carbi_navigation mapping.launch.py
 
 
 ## 💡 Navigation (go to goal)
-<video controls src="img&vid/navigation.mp4" title="Title"></video>
+
+
+https://github.com/HBBEEP/CARBI-1/assets/75566343/29965f14-ad02-44ab-b117-75aa3aac5996
+
+
 
 ### Terminal 1 (remote to raspberry pi 5)
 
@@ -147,11 +153,13 @@ ros2 launch carbi_navigation justdisplay.launch.py
 
 ### Teleop
 
-<video controls src="img&vid/teleop_demo.mp4" title="Title"></video>
+https://github.com/HBBEEP/CARBI-1/assets/75566343/67f60eaf-9dd0-44ad-a491-fbd2fea5e72d
+
 
 ### Go to Goal
 
-<video controls src="img&vid/go_to_goal_demo.mp4" title="Title"></video>
+https://github.com/HBBEEP/CARBI-1/assets/75566343/925398d9-09d5-472c-af4d-fc590bbdd2da
+
 
 - Here is global cost map
 
