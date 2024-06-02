@@ -11,6 +11,90 @@ This project is a part of the FRA532 Mobile robotics course. Our team includes:
 1. Kullakant Kaewkallaya 64340500006 [@hbbeep](https://github.com/hbbeep)
 2. Thamakorn Tongyod 64340500028 [@TheGot](https://github.com/TheGotGithub)
 
+## **CARBI Controller**
+
+The CARBI Controller manages the operation of motors to enable the robot to move in specified directions and at set speeds. It is divided into two main parts the ROS Node and the ESP32 Controller, which communicate via Serial communication.
+
+### **ROS Node**
+
+The ROS Node converts commands and sends data through Serial to the ESP32 microcontroller, as well as reading the speed of each wheel.
+
+![image](https://github.com/HBBEEP/CARBI/assets/104858772/2862cf5f-c482-4875-ac7e-277ab000ea0b)
+
+**Node subscriber:**
+
+- **`/cmd_vel`**: Sets the speed of each wheel.
+- **`/Emergency`**: Controls the emergency stop of the robot.
+
+**Node publisher:**
+
+- **`/wheel_vel`**: Publishes the speed of each wheel.
+
+**Serial communication:**
+
+- **Motor command:** Instructs the ESP32 to control each motor to operate at the specified speed.
+    
+    Serial format:
+    
+    ```xml
+    <v,velocity_motorA,velocity_motorB,velocity_motorC,velocity_motorD>
+    ```
+    
+- **Sensor callback:** Data read from sensors sent by the ESP32.
+    
+    Serial format
+    
+    ```xml
+    sensor1,sensor2,sensor3,sensor4
+    ```
+    
+
+**Functions:**
+
+- **`set_velocity_cmd`**: Converts the **`cmd_vel`** values (Twist) into the specified format to send to the ESP32.
+- **`serial_wheel_cmd`**: Sends data through Serial to the ESP32.
+- **`Emergency_control`**: Manages the emergency state by instructing the ESP32 to stop when this function is triggered.
+- **`Serial_read`**: Receives data sent from the ESP32 via Serial and publishes the values.
+
+### **ESP32 Controller**
+
+The ESP32 Controller operates on the microcontroller, sending and receiving commands and data through Serial. It controls motor speed and reads raw data from the Encoder to convert into speed.
+
+![image](https://github.com/HBBEEP/CARBI/assets/104858772/d810cf52-3764-434a-9f14-652b31f4e931)
+
+**Functions:**
+
+- **`serial_read`**: Reads Serial data sent from the ROS Node.
+- **`parse_data`**: Parses the received message and categorizes the data.
+- **`state_control`**: Processes the parsed data according to the specified mode and sets the target values.
+- **`PID`**: Controls the motor speed to maintain the specified target speed.
+- **`motor_drive`**: Supplies power to the motor in the form of PWM.
+- **`motor_velocity_callback`**: Reads values from the encoder and converts them into speed in rad.
+- **`serial_write`**: Formats and sends the motor speed data through Serial.
+
+### **Node Run**
+
+```bash
+ros2 run carbi_controller controller.py
+```
+
+## CARBI Electronic and Electrical component
+
+### Control part
+
+- Single board computer (Master) : Raspberry Pi5+Active Cooler
+- Microcontroller (Slave) : ESP32 36Pin+shield
+- Step down : DC to DC 24V to 5V 5A
+- Motor Drive : MDD10A Cytron
+- Motor : Motor 24V 50 rpm
+- Emergency Switch
+- Power Switch
+
+### Sensor part
+
+- IMU : mpu9250
+- Lidar : rplidar A1M8-R6
+- Encoder : AMT103-V
 
 --------
 ## Wheel odometry of mecanum 
@@ -220,6 +304,6 @@ https://github.com/HBBEEP/CARBI/assets/75566343/d1e5f386-5c25-4314-a8aa-83ececcf
 
 ## 🔴 Problem
 
-1. 
-2. 
+1. Raspberry Pi reads values from USB Serial unreliably when reading values from RPLIDAR simultaneously.
+2. Mecanum wheels slip on smooth and slippery surfaces.
 3. 
