@@ -8,8 +8,32 @@ CARBI is a mecanum mobile robot equipped with an RPLidar mounted on top. In its 
 ## 👍 Members
 This project is a part of the FRA532 Mobile robotics course. Our team includes:
 
-1. Kullakant Kaewkallaya
-2. Thamakorn Tongyod
+1. Kullakant Kaewkallaya 64340500006 [@hbbeep](https://github.com/hbbeep)
+2. Thamakorn Tongyod 64340500028 [@TheGot](https://github.com/TheGotGithub)
+
+
+--------
+## Wheel odometry of mecanum 
+
+Forward Kinematics 
+
+![Screenshot 2024-06-03 001211](https://github.com/HBBEEP/CARBI/assets/75566343/438ad441-0f50-4cb6-bea6-7009be75690e)
+
+
+Inverse Kinematics
+
+![Screenshot 2024-06-03 001234](https://github.com/HBBEEP/CARBI/assets/75566343/ea832347-76ee-4e5d-aa35-6b9e06e44382)
+
+When :
+```math
+v_{x}  = \text{linear velocity along the x-axis} \\
+
+v_{y}  = \text{linear velocity along the y-axis} \\
+
+\omega_{z} = \text{ angular velocity along the z-axis}
+```
+
+reference : https://cdn.intechopen.com/pdfs/465/InTechOmnidirectional_mobile_robot_design_and_implementation.pdf
 
 --------
 
