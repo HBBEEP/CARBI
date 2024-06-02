@@ -11,7 +11,7 @@ This project is a part of the FRA532 Mobile robotics course. Our team includes:
 1. Kullakant Kaewkallaya 64340500006 [@hbbeep](https://github.com/hbbeep)
 2. Thamakorn Tongyod 64340500028 [@TheGot](https://github.com/TheGotGithub)
 
-## **CARBI Controller**
+## CARBI Controller
 
 The CARBI Controller manages the operation of motors to enable the robot to move in specified directions and at set speeds. It is divided into two main parts the ROS Node and the ESP32 Controller, which communicate via Serial communication.
 
@@ -56,7 +56,7 @@ The ROS Node converts commands and sends data through Serial to the ESP32 microc
 - **`Emergency_control`**: Manages the emergency state by instructing the ESP32 to stop when this function is triggered.
 - **`Serial_read`**: Receives data sent from the ESP32 via Serial and publishes the values.
 
-### **ESP32 Controller**
+### ESP32 Controller
 
 The ESP32 Controller operates on the microcontroller, sending and receiving commands and data through Serial. It controls motor speed and reads raw data from the Encoder to convert into speed.
 
@@ -101,21 +101,16 @@ ros2 run carbi_controller controller.py
 
 Forward Kinematics 
 
-![Screenshot 2024-06-03 001211](https://github.com/HBBEEP/CARBI/assets/75566343/438ad441-0f50-4cb6-bea6-7009be75690e)
-
+![Screenshot 2024-06-03 015238](https://github.com/HBBEEP/CARBI/assets/75566343/d3cfd636-c434-46fd-9713-8f07a521a21d)
 
 Inverse Kinematics
 
-![Screenshot 2024-06-03 001234](https://github.com/HBBEEP/CARBI/assets/75566343/ea832347-76ee-4e5d-aa35-6b9e06e44382)
+![Screenshot 2024-06-03 015245](https://github.com/HBBEEP/CARBI/assets/75566343/e90d1a5a-819c-4c48-bf4e-4e4f05daf23e)
 
 When :
-```math
-v_{x}  = \text{linear velocity along the x-axis} \\
 
-v_{y}  = \text{linear velocity along the y-axis} \\
+![Screenshot 2024-06-03 015149](https://github.com/HBBEEP/CARBI/assets/75566343/e4ed9fb9-9bad-4c96-84a1-b0e09e07784f)
 
-\omega_{z} = \text{ angular velocity along the z-axis}
-```
 
 reference : https://cdn.intechopen.com/pdfs/465/InTechOmnidirectional_mobile_robot_design_and_implementation.pdf
 
