@@ -303,6 +303,7 @@ https://github.com/HBBEEP/CARBI/assets/75566343/d1e5f386-5c25-4314-a8aa-83ececcf
 
 ## 🔴 Problem
 
-1. Raspberry Pi reads values from USB Serial unreliably when reading values from RPLIDAR simultaneously.
-2. Mecanum wheels slip on smooth and slippery surfaces.
-3. 
+1. Mecanum wheels slip excessively on smooth and slippery surfaces.
+2. Due to the static attachment between the wheels and chassis, some wheels float when running on an uneven floor.
+3. The Raspberry Pi reads values from the USB serial unreliably when simultaneously reading values from the RPLIDAR.
+
