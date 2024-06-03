@@ -105,7 +105,7 @@ ros2 run carbi_controller controller.py
 
 **When :**
 
-![Screenshot 2024-06-03 015149](https://github.com/HBBEEP/CARBI/assets/75566343/e4ed9fb9-9bad-4c96-84a1-b0e09e07784f)
+![Screenshot 2024-06-03 015431](https://github.com/HBBEEP/CARBI/assets/75566343/58a195db-6a4a-4453-9441-0c8feafc6fee)
 
 
 reference : https://cdn.intechopen.com/pdfs/465/InTechOmnidirectional_mobile_robot_design_and_implementation.pdf
@@ -303,7 +303,6 @@ https://github.com/HBBEEP/CARBI/assets/75566343/d1e5f386-5c25-4314-a8aa-83ececcf
 
 ## 🔴 Problem
 
-1. Mecanum wheels slip excessively on smooth and slippery surfaces.
-2. Due to the static attachment between the wheels and chassis, some wheels float when running on an uneven floor.
-3. The Raspberry Pi reads values from the USB serial unreliably when simultaneously reading values from the RPLIDAR.
-
+1. Mecanum wheels slip excessively on smooth and slippery surfaces, causing incorrect wheel odometry.
+2. Due to the static attachment between the wheels and chassis, some wheels float when running on an uneven floor, causing both the linear and angular velocity of the robot to not match the commanded values.
+3. The Raspberry Pi loses some values when simultaneously reading from the USB serial and the RPLIDAR, leading to inaccurate wheel velocity readings during that time.
