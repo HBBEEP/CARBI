@@ -11,11 +11,25 @@ This project is a part of the FRA532 Mobile robotics course. Our team includes:
 1. Kullakant Kaewkallaya 64340500006 [@hbbeep](https://github.com/hbbeep)
 2. Thamakorn Tongyod 64340500028 [@TheGot](https://github.com/TheGotGithub)
 
-## CARBI Controller
+------
+
+## ⚡ Component
+
+- Single board computer (Master) : Raspberry Pi5+Active Cooler
+- Microcontroller (Slave) : ESP32 36Pin+shield
+- Step down : DC to DC 24V to 5V 5A
+- Motor Drive : MDD10A Cytron
+- Motor : Motor 24V 50 rpm
+- IMU : mpu9250
+- Lidar : rplidar A1M8-R6
+- Encoder : AMT103-V
+
+
+## 💻 Controller
 
 The CARBI Controller manages the operation of motors to enable the robot to move in specified directions and at set speeds. It is divided into two main parts the ROS Node and the ESP32 Controller, which communicate via Serial communication.
 
-### **ROS Node**
+### ROS Node
 
 The ROS Node converts commands and sends data through Serial to the ESP32 microcontroller, as well as reading the speed of each wheel.
 
@@ -78,41 +92,30 @@ The ESP32 Controller operates on the microcontroller, sending and receiving comm
 ros2 run carbi_controller controller.py
 ```
 
-## CARBI Electronic and Electrical component
-
-### Control part
-
-- Single board computer (Master) : Raspberry Pi5+Active Cooler
-- Microcontroller (Slave) : ESP32 36Pin+shield
-- Step down : DC to DC 24V to 5V 5A
-- Motor Drive : MDD10A Cytron
-- Motor : Motor 24V 50 rpm
-- Emergency Switch
-- Power Switch
-
-### Sensor part
-
-- IMU : mpu9250
-- Lidar : rplidar A1M8-R6
-- Encoder : AMT103-V
-
 --------
-## Wheel odometry of mecanum 
+## 🚗 Wheel odometry of mecanum 
 
-Forward Kinematics 
+**Forward Kinematics :**
 
 ![Screenshot 2024-06-03 015238](https://github.com/HBBEEP/CARBI/assets/75566343/d3cfd636-c434-46fd-9713-8f07a521a21d)
 
-Inverse Kinematics
+**Inverse Kinematics :**
 
 ![Screenshot 2024-06-03 015245](https://github.com/HBBEEP/CARBI/assets/75566343/e90d1a5a-819c-4c48-bf4e-4e4f05daf23e)
 
-When :
+**When :**
 
 ![Screenshot 2024-06-03 015149](https://github.com/HBBEEP/CARBI/assets/75566343/e4ed9fb9-9bad-4c96-84a1-b0e09e07784f)
 
 
 reference : https://cdn.intechopen.com/pdfs/465/InTechOmnidirectional_mobile_robot_design_and_implementation.pdf
+
+
+## ⚓ TF
+
+Here is the TF of the robot 
+
+![Screenshot from 2024-06-03 13-39-53](https://github.com/HBBEEP/CARBI/assets/75566343/ce0b94ef-d663-40d2-ae2d-ef56c7e94ec3)
 
 --------
 
@@ -279,7 +282,7 @@ ros2 launch carbi_navigation justdisplay.launch.py
 
 --------
 
-## Demo 
+## 🚩 Demo 
 
 ### Teleop
 https://github.com/HBBEEP/CARBI/assets/75566343/6e0ab325-5b5f-4c99-aeb5-c4cbf7db826a
@@ -294,6 +297,7 @@ https://github.com/HBBEEP/CARBI/assets/75566343/d1e5f386-5c25-4314-a8aa-83ececcf
 #### local cost map
   
 ![local_cost_map](https://github.com/HBBEEP/CARBI/assets/75566343/59c2f7a7-7f45-43d1-9841-0280b5625365)
+
 
 --------
 
